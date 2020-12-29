@@ -1,0 +1,2254 @@
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_06.grib'.
+grib_to_netcdf: Found 1331 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+2018-09-20 14:47:43 ECMWF API python library 1.5.0
+2018-09-20 14:47:43 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 14:47:44 Welcome Mariano Alvarez
+2018-09-20 14:47:46 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 14:47:46 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 14:47:48 Request submitted
+2018-09-20 14:47:48 Request id: 5ba3de4c2fd81c9769dacb55
+2018-09-20 14:47:48 Request is queued
+2018-09-20 14:50:14 Request is active
+Calling 'nice mars /tmp/79/34/tmp-_marsrWdk_a.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.175443 - Welcome to MARS
+mars - INFO   - 20180920.175443 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.175443 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.175443 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.175443 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.175443 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.175443 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150604/20150611/20150618/20150625,type=pf,class=s2,expect=anymars - INFO   - 20180920.175443 - Automatic split by date is on
+
+mars - INFO   - 20180920.175443 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20150604/20150611/20150618/20150625
+
+mars - INFO   - 20180920.175443 - Web API request id: 5ba3de4c2fd81c9769dacb55
+mars - INFO   - 20180920.175443 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.175443 - Calling mars on 'marsth', callback on 50986
+mars - INFO   - 20180920.175443 - Server task is 386 [marsth]
+mars - INFO   - 20180920.175443 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.175444 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.175807 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.175807 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.175807 - 36800 fields have been interpolated
+mars - INFO   - 20180920.175807 - Request time:  wall: 3 min 24 sec  cpu: 3 min 22 sec
+mars - INFO   - 20180920.175807 -   Read from network: 2.00 Gbyte(s) in 2 sec  [1.22 Gbyte/sec]
+mars - INFO   - 20180920.175807 -   Visiting marsth: wall: 3 min 24 sec
+mars - INFO   - 20180920.175807 -   Post-processing: wall: 2 min 2 sec cpu: 2 min 2 sec
+mars - INFO   - 20180920.175807 -   Writing to target file: 165.75 Mbyte(s) in 1 sec  [159.63 Mbyte/sec]
+mars - INFO   - 20180920.175807 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.175807 - No errors reported
+Process '['nice', 'mars', '/tmp/79/34/tmp-_marsrWdk_a.req']' finished
+2018-09-20 14:53:45 Request is complete
+2018-09-20 14:53:45 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_06.grib
+2018-09-20 14:53:45 From https://stream.ecmwf.int/data/atls13/data/data05/scratch/4e/46/_mars-atls13-70e05f9f8ba4e9d19932f1c45a7be8d8-n6Js3h.grib
+2018-09-20 14:55:13 Transfer rate 1.88129 Mbytes/s
+2018-09-20 14:55:21 ECMWF API python library 1.5.0
+2018-09-20 14:55:21 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 14:55:22 Welcome Mariano Alvarez
+2018-09-20 14:55:23 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 14:55:23 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 14:55:24 Request submitted
+2018-09-20 14:55:24 Request id: 5ba3e015bbd91c9da2c0d023
+2018-09-20 14:55:24 Request is queued
+Calling 'nice mars /tmp/3e/9b/tmp-_mars6Wu_us.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.180303 - Welcome to MARS
+mars - INFO   - 20180920.180303 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.180303 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.180303 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.180303 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.180303 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.180303 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150604/20150611/20150618/20150625,type=cf,class=s2,expect=anymars - INFO   - 20180920.180303 - Automatic split by date is on
+
+mars - INFO   - 20180920.180303 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20150604/20150611/20150618/20150625
+
+mars - INFO   - 20180920.180303 - Web API request id: 5ba3e015bbd91c9da2c0d023
+mars - INFO   - 20180920.180303 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.180303 - Calling mars on 'marsth', callback on 58303
+mars - INFO   - 20180920.180303 - Server task is 147 [marsth]
+mars - INFO   - 20180920.180303 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.180303 - Transfering 214518240 bytes
+2018-09-20 14:58:57 Request is active
+mars - INFO   - 20180920.180324 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.180324 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.180324 - 3680 fields have been interpolatedgrib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_06.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_06.grib'.
+grib_to_netcdf: Found 36800 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+2018-09-20 14:49:26 ECMWF API python library 1.5.0
+2018-09-20 14:49:26 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 14:49:27 Welcome Mariano Alvarez
+2018-09-20 14:49:28 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 14:49:28 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 14:49:29 Request submitted
+2018-09-20 14:49:29 Request id: 5ba3deb12fd81c976adacb6b
+2018-09-20 14:49:29 Request is queued
+2018-09-20 14:52:22 Request is active
+Calling 'nice mars /tmp/f2/66/tmp-_marshzeZMQ.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.175646 - Welcome to MARS
+mars - INFO   - 20180920.175646 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.175646 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.175646 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.175646 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.175646 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.175646 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150604/20150611/20150618/20150625,type=pf,class=s2,expect=anymars - INFO   - 20180920.175647 - Automatic split by date is on
+
+mars - INFO   - 20180920.175647 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20150604/20150611/20150618/20150625
+
+mars - INFO   - 20180920.175647 - Web API request id: 5ba3deb12fd81c976adacb6b
+mars - INFO   - 20180920.175647 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.175647 - Calling mars on 'marsth', callback on 35908
+mars - INFO   - 20180920.175647 - Server task is 952 [marsth]
+mars - INFO   - 20180920.175647 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.175647 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.180121 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.180121 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.180121 - 36800 fields have been interpolated
+mars - INFO   - 20180920.180121 - Request time:  wall: 4 min 34 sec  cpu: 4 min 30 sec
+mars - INFO   - 20180920.180121 -   Read from network: 2.00 Gbyte(s) in 2 sec  [860.74 Mbyte/sec]
+mars - INFO   - 20180920.180121 -   Visiting marsth: wall: 4 min 34 sec
+mars - INFO   - 20180920.180121 -   Post-processing: wall: 2 min 41 sec cpu: 2 min 39 sec
+mars - INFO   - 20180920.180121 -   Writing to target file: 165.75 Mbyte(s) in 2 sec  [84.59 Mbyte/sec] cpu: 2 sec
+mars - INFO   - 20180920.180121 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.180121 - No errors reported
+Process '['nice', 'mars', '/tmp/f2/66/tmp-_marshzeZMQ.req']' finished
+2018-09-20 14:56:57 Request is complete
+2018-09-20 14:56:57 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_06.grib
+2018-09-20 14:56:57 From https://stream.ecmwf.int/data/atls14/data/data04/scratch/43/ec/_mars-atls14-a562cefde8a29a7288fa0b8b7f9413f7-vZmows.grib
+2018-09-20 14:59:20 Transfer rate 1.15902 Mbytes/s
+2018-09-20 15:02:30 ECMWF API python library 1.5.0
+2018-09-20 15:02:30 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:02:31 Welcome Mariano Alvarez
+2018-09-20 15:02:32 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:02:32 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:02:33 Request submitted
+2018-09-20 15:02:33 Request id: 5ba3e1c1c7db1ca7fbd99a45
+2018-09-20 15:02:33 Request is queued
+2018-09-20 15:04:46 Request is active
+Calling 'nice mars /tmp/fd/8e/tmp-_marsNmSKKx.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.180910 - Welcome to MARS
+mars - INFO   - 20180920.180910 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.180910 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.180910 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.180910 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.180910 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.180910 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150604/20150611/20150618/20150625,type=cf,class=s2,expect=anymars - INFO   - 20180920.180910 - Automatic split by date is on
+
+mars - INFO   - 20180920.180910 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20150604/20150611/20150618/20150625
+
+mars - INFO   - 20180920.180910 - Web API request id: 5ba3e1c1c7db1ca7fbd99a45
+mars - INFO   - 20180920.180910 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.180910 - Calling mars on 'marsth', callback on 34768
+mars - INFO   - 20180920.180910 - Server task is 878 [marsth]
+mars - INFO   - 20180920.180910 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.180911 - Transfering 214518240 bytes
+mars - INFO   - 20180920.180931 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.180931 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.180931 - 3680 fields have been interpolatedgrib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_06.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_07.grib'.
+grib_to_netcdf: Found 1109 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+mars - INFO   - 20180920.180324 - Request time:  wall: 21 sec  cpu: 20 sec
+mars - INFO   - 20180920.180324 -   Read from network: 204.58 Mbyte(s) in < 1 sec [322.67 Mbyte/sec]
+mars - INFO   - 20180920.180324 -   Visiting marsth: wall: 21 sec
+mars - INFO   - 20180920.180324 -   Post-processing: wall: 12 sec cpu: 12 sec
+mars - INFO   - 20180920.180324 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [193.41 Mbyte/sec]
+mars - INFO   - 20180920.180324 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.180324 - No errors reported
+Process '['nice', 'mars', '/tmp/3e/9b/tmp-_mars6Wu_us.req']' finished
+2018-09-20 14:59:03 Request is complete
+2018-09-20 14:59:03 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_06.grib
+2018-09-20 14:59:03 From https://stream.ecmwf.int/data/atls13/data/data05/scratch/d9/5b/_mars-atls13-70e05f9f8ba4e9d19932f1c45a7be8d8-kHZRoA.grib
+2018-09-20 14:59:13 Transfer rate 1.58099 Mbytes/s
+2018-09-20 14:59:34 ECMWF API python library 1.5.0
+2018-09-20 14:59:34 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 14:59:35 Welcome Mariano Alvarez
+2018-09-20 14:59:36 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 14:59:36 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 14:59:37 Request submitted
+2018-09-20 14:59:37 Request id: 5ba3e111c7db1ca827d999d5
+2018-09-20 14:59:37 Request is queued
+Calling 'nice mars /tmp/ff/62/tmp-_marsDcFkO4.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.180458 - Welcome to MARS
+mars - INFO   - 20180920.180458 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.180458 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.180458 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.180458 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.180458 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.180458 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150702/20150709/20150716/20150723/20150730,type=pf,class=s2,expect=anymars - INFO   - 20180920.180458 - Automatic split by date is on
+
+mars - INFO   - 20180920.180458 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20150702/20150709/20150716/20150723/20150730
+
+mars - INFO   - 20180920.180458 - Web API request id: 5ba3e111c7db1ca827d999d5
+mars - INFO   - 20180920.180458 - Requesting any number of fields (request describes 11500)
+mars - INFO   - 20180920.180458 - Calling mars on 'marsth', callback on 43329
+mars - INFO   - 20180920.180458 - Server task is 334 [marsth]
+mars - INFO   - 20180920.180458 - Request cost: 46,000 fields, 2.49732 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.180459 - Transfering 2681478000 bytes
+2018-09-20 15:00:34 Request is active
+mars - INFO   - 20180920.180941 - 46000 fields retrieved from 'marsth'
+mars - WARN   - 20180920.180941 - Visiting database marsth : expected 0, got 46000
+mars - INFO   - 20180920.180941 - 46000 fields have been interpolated
+mars - INFO   - 20180920.180941 - Request time:  wall: 4 min 43 sec  cpu: 4 min 40 sec
+mars - INFO   - 20180920.180941 -   Read from network: 2.50 Gbyte(s) in 2 sec  [1.02 Gbyte/sec]
+mars - INFO   - 20180920.180941 -   Visiting marsth: wall: 4 min 43 sec
+mars - INFO   - 20180920.180941 -   Post-processing: wall: 2 min 50 sec cpu: 2 min 50 sec
+mars - INFO   - 20180920.180941 -   Writing to target file: 207.19 Mbyte(s) in 2 sec  [105.15 Mbyte/sec] cpu: 2 sec
+mars - INFO   - 20180920.180941 - Memory used: 45.52 Mbyte(s)
+mars - INFO   - 20180920.180941 - No errors reported
+Process '['nice', 'mars', '/tmp/ff/62/tmp-_marsDcFkO4.req']' finished
+2018-09-20 15:05:20 Request is complete
+2018-09-20 15:05:20 Transfering 207.193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_07.grib
+2018-09-20 15:05:20 From https://stream.ecmwf.int/data/atls06/data/data04/scratch/eb/69/_mars-atls06-a562cefde8a29a7288fa0b8b7f9413f7-JzWBND.grib
+2018-09-20 15:07:07 Transfer rate 1.93704 Mbytes/s
+2018-09-20 15:07:14 ECMWF API python library 1.5.0
+2018-09-20 15:07:14 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:07:16 Welcome Mariano Alvarez
+2018-09-20 15:07:18 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:07:18 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:07:20 Request submitted
+2018-09-20 15:07:20 Request id: 5ba3e2e0c8ca19be841fdf78
+2018-09-20 15:07:20 Request is queued
+Calling 'nice mars /tmp/01/70/tmp-_marsp9Gkhp.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.181258 - Welcome to MARS
+mars - INFO   - 20180920.181258 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.181258 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.181258 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.181258 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.181258 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.181258 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150702/20150709/20150716/20150723/20150730,type=cf,class=s2,expect=anymars - INFO   - 20180920.181258 - Automatic split by date is on
+
+mars - INFO   - 20180920.181258 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_07.grib'.
+grib_to_netcdf: Found 4600 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_08.grib'.
+grib_to_netcdf: Found 1109 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_07.grib'.
+grib_to_netcdf: Found 46000 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20150702/20150709/20150716/20150723/20150730
+
+mars - INFO   - 20180920.181258 - Web API request id: 5ba3e2e0c8ca19be841fdf78
+mars - INFO   - 20180920.181258 - Requesting any number of fields (request describes 230)
+mars - INFO   - 20180920.181258 - Calling mars on 'marsth', callback on 57829
+mars - INFO   - 20180920.181258 - Server task is 312 [marsth]
+mars - INFO   - 20180920.181258 - Request cost: 4,600 fields, 255.726 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.181259 - Transfering 268147800 bytes
+2018-09-20 15:08:37 Request is active
+mars - INFO   - 20180920.181342 - 4600 fields retrieved from 'marsth'
+mars - WARN   - 20180920.181342 - Visiting database marsth : expected 0, got 4600
+mars - INFO   - 20180920.181342 - 4600 fields have been interpolated
+mars - INFO   - 20180920.181342 - Request time:  wall: 44 sec  cpu: 42 sec
+mars - INFO   - 20180920.181342 -   Read from network: 255.73 Mbyte(s) in < 1 sec [348.87 Mbyte/sec]
+mars - INFO   - 20180920.181342 -   Visiting marsth: wall: 44 sec
+mars - INFO   - 20180920.181342 -   Post-processing: wall: 25 sec cpu: 24 sec
+mars - INFO   - 20180920.181342 -   Writing to target file: 20.72 Mbyte(s) in < 1 sec [72.50 Mbyte/sec]
+mars - INFO   - 20180920.181342 - Memory used: 44.32 Mbyte(s)
+mars - INFO   - 20180920.181342 - No errors reported
+Process '['nice', 'mars', '/tmp/01/70/tmp-_marsp9Gkhp.req']' finished
+2018-09-20 15:09:20 Request is complete
+2018-09-20 15:09:20 Transfering 20.7193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_07.grib
+2018-09-20 15:09:20 From https://stream.ecmwf.int/data/atls04/data/data02/scratch/4b/f6/_mars-atls04-a82bacafb5c306db76464bc7e824bb75-taxXBI.grib
+2018-09-20 15:09:35 Transfer rate 1.34183 Mbytes/s
+2018-09-20 15:10:01 ECMWF API python library 1.5.0
+2018-09-20 15:10:01 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:10:02 Welcome Mariano Alvarez
+2018-09-20 15:10:03 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:10:03 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:10:05 Request submitted
+2018-09-20 15:10:05 Request id: 5ba3e385cad519970803130a
+2018-09-20 15:10:05 Request is queued
+Calling 'nice mars /tmp/40/2d/tmp-_marsFyT7SV.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.181545 - Welcome to MARS
+mars - INFO   - 20180920.181545 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.181545 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.181545 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.181545 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.181545 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.181545 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150806/20150813/20150820/20150827,type=pf,class=s2,expect=anymars - INFO   - 20180920.181545 - Automatic split by date is on
+
+mars - INFO   - 20180920.181545 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20150806/20150813/20150820/20150827
+
+mars - INFO   - 20180920.181545 - Web API request id: 5ba3e385cad519970803130a
+mars - INFO   - 20180920.181545 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.181545 - Calling mars on 'marsth', callback on 40272
+2018-09-20 15:11:21 Request is active
+mars - INFO   - 20180920.181545 - Server task is 88 [marsth]
+mars - INFO   - 20180920.181545 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.181546 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.181953 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.181953 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.181953 - 36800 fields have been interpolated
+mars - INFO   - 20180920.181953 - Request time:  wall: 4 min 7 sec  cpu: 4 min 3 sec
+mars - INFO   - 20180920.181953 -   Read from network: 2.00 Gbyte(s) in 2 sec  [952.96 Mbyte/sec]
+mars - INFO   - 20180920.181953 -   Visiting marsth: wall: 4 min 7 sec
+mars - INFO   - 20180920.181953 -   Post-processing: wall: 2 min 28 sec cpu: 2 min 27 sec
+mars - INFO   - 20180920.181953 -   Writing to target file: 165.75 Mbyte(s) in 2 sec  [84.43 Mbyte/sec] cpu: 2 sec
+mars - INFO   - 20180920.181953 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.181953 - No errors reported
+Process '['nice', 'mars', '/tmp/40/2d/tmp-_marsFyT7SV.req']' finished
+2018-09-20 15:15:35 Request is complete
+2018-09-20 15:15:35 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_08.grib
+2018-09-20 15:15:35 From https://stream.ecmwf.int/data/atls14/data/data02/scratch/6e/9b/_mars-atls14-a82bacafb5c306db76464bc7e824bb75-iGb2vj.grib
+2018-09-20 15:17:50 Transfer rate 1.22768 Mbytes/s
+2018-09-20 15:17:57 ECMWF API python library 1.5.0
+2018-09-20 15:17:57 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:17:58 Welcome Mariano Alvarez
+2018-09-20 15:17:59 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:17:59 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:18:00 Request submitted
+2018-09-20 15:18:00 Request id: 5ba3e560bbd91c9dd6c0d09c
+2018-09-20 15:18:00 Request is queued
+Calling 'nice mars /tmp/32/1d/tmp-_marslWysNq.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.182246 - Welcome to MARS
+mars - INFO   - 20180920.182246 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.182246 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.182246 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.182246 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.182246 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.182246 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150806/20150813/20150820/20150827,type=cf,class=s2,expect=anymars - INFO   - 20180920.182246 - Automatic split by date is on
+mars - INFO   - 20180920.180931 - Request time:  wall: 20 sec  cpu: 20 sec
+mars - INFO   - 20180920.180931 -   Read from network: 204.58 Mbyte(s) in < 1 sec [463.42 Mbyte/sec]
+mars - INFO   - 20180920.180931 -   Visiting marsth: wall: 20 sec
+mars - INFO   - 20180920.180931 -   Post-processing: wall: 12 sec cpu: 12 sec
+mars - INFO   - 20180920.180931 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [205.14 Mbyte/sec]
+mars - INFO   - 20180920.180931 - Memory used: 44.31 Mbyte(s)
+mars - INFO   - 20180920.180931 - No errors reported
+Process '['nice', 'mars', '/tmp/fd/8e/tmp-_marsNmSKKx.req']' finished
+2018-09-20 15:05:11 Request is complete
+2018-09-20 15:05:11 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_06.grib
+2018-09-20 15:05:11 From https://stream.ecmwf.int/data/atls06/data/data04/scratch/d6/c1/_mars-atls06-a562cefde8a29a7288fa0b8b7f9413f7-7VQZyC.grib
+2018-09-20 15:05:21 Transfer rate 1.62126 Mbytes/s
+2018-09-20 15:05:42 ECMWF API python library 1.5.0
+2018-09-20 15:05:42 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:05:44 Welcome Mariano Alvarez
+2018-09-20 15:05:45 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:05:45 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:05:46 Request submitted
+2018-09-20 15:05:46 Request id: 5ba3e2822fd81c9750dacb8f
+2018-09-20 15:05:46 Request is queued
+2018-09-20 15:06:43 Request is active
+Calling 'nice mars /tmp/fa/de/tmp-_marsOmVlSS.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.181107 - Welcome to MARS
+mars - INFO   - 20180920.181107 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.181107 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.181107 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.181107 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.181107 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.181107 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150702/20150709/20150716/20150723/20150730,type=pf,class=s2,expect=anymars - INFO   - 20180920.181108 - Automatic split by date is on
+
+mars - INFO   - 20180920.181108 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20150702/20150709/20150716/20150723/20150730
+
+mars - INFO   - 20180920.181108 - Web API request id: 5ba3e2822fd81c9750dacb8f
+mars - INFO   - 20180920.181108 - Requesting any number of fields (request describes 11500)
+mars - INFO   - 20180920.181108 - Calling mars on 'marsth', callback on 55931
+mars - INFO   - 20180920.181108 - Server task is 88 [marsth]
+mars - INFO   - 20180920.181108 - Request cost: 46,000 fields, 2.49732 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.181108 - Transfering 2681478000 bytes
+mars - INFO   - 20180920.181541 - 46000 fields retrieved from 'marsth'
+mars - WARN   - 20180920.181541 - Visiting database marsth : expected 0, got 46000
+mars - INFO   - 20180920.181541 - 46000 fields have been interpolated
+mars - INFO   - 20180920.181541 - Request time:  wall: 4 min 34 sec  cpu: 4 min 32 sec
+mars - INFO   - 20180920.181541 -   Read from network: 2.50 Gbyte(s) in 3 sec  [818.79 Mbyte/sec]
+mars - INFO   - 20180920.181541 -   Visiting marsth: wall: 4 min 34 sec
+mars - INFO   - 20180920.181541 -   Post-processing: wall: 2 min 45 sec cpu: 2 min 44 sec
+mars - INFO   - 20180920.181541 -   Writing to target file: 207.19 Mbyte(s) in 2 sec  [114.65 Mbyte/sec] cpu: 2 sec
+mars - INFO   - 20180920.181541 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.181541 - No errors reported
+Process '['nice', 'mars', '/tmp/fa/de/tmp-_marsOmVlSS.req']' finished
+2018-09-20 15:11:25 Request is complete
+2018-09-20 15:11:25 Transfering 207.193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_07.grib
+2018-09-20 15:11:25 From https://stream.ecmwf.int/data/atls04/data/data03/scratch/b7/75/_mars-atls04-98f536083ae965b31b0d04811be6f4c6-yHOCnk.grib
+2018-09-20 15:13:54 Transfer rate 1.39709 Mbytes/s
+2018-09-20 15:18:02 ECMWF API python library 1.5.0
+2018-09-20 15:18:02 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:18:04 Welcome Mariano Alvarez
+2018-09-20 15:18:05 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:18:05 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:18:06 Request submitted
+2018-09-20 15:18:06 Request id: 5ba3e566c7db1ca800d99a27
+2018-09-20 15:18:06 Request is queued
+Calling 'nice mars /tmp/5d/ec/tmp-_marsdCdcYQ.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.182303 - Welcome to MARS
+mars - INFO   - 20180920.182303 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.182303 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.182303 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.182303 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.182303 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.182303 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150702/20150709/20150716/20150723/20150730,type=cf,class=s2,expect=anymars - INFO   - 20180920.182303 - Automatic split by date is on
+
+mars - INFO   - 20180920.182303 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_08.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+
+mars - INFO   - 20180920.182246 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20150806/20150813/20150820/20150827
+
+mars - INFO   - 20180920.182246 - Web API request id: 5ba3e560bbd91c9dd6c0d09c
+mars - INFO   - 20180920.182246 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.182246 - Calling mars on 'marsth', callback on 49840
+mars - INFO   - 20180920.182246 - Server task is 96 [marsth]
+mars - INFO   - 20180920.182246 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.182246 - Transfering 214518240 bytes
+2018-09-20 15:18:27 Request is active
+mars - INFO   - 20180920.182308 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.182308 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.182308 - 3680 fields have been interpolated
+mars - INFO   - 20180920.182308 - Request time:  wall: 22 sec  cpu: 21 sec
+mars - INFO   - 20180920.182308 -   Read from network: 204.58 Mbyte(s) in < 1 sec [396.42 Mbyte/sec]
+mars - INFO   - 20180920.182308 -   Visiting marsth: wall: 22 sec
+mars - INFO   - 20180920.182308 -   Post-processing: wall: 13 sec cpu: 13 sec
+mars - INFO   - 20180920.182308 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [127.12 Mbyte/sec]
+mars - INFO   - 20180920.182308 - Memory used: 46.27 Mbyte(s)
+mars - INFO   - 20180920.182308 - No errors reported
+Process '['nice', 'mars', '/tmp/32/1d/tmp-_marslWysNq.req']' finished
+2018-09-20 15:18:46 Request is complete
+2018-09-20 15:18:46 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_08.grib
+2018-09-20 15:18:46 From https://stream.ecmwf.int/data/atls05/data/data02/scratch/4f/0b/_mars-atls05-a82bacafb5c306db76464bc7e824bb75-DIiAH2.grib
+2018-09-20 15:18:57 Transfer rate 1.55789 Mbytes/s
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_07.grib'.
+grib_to_netcdf: Found 4600 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+GRIB_API ERROR   :  Wrong number of fields
+GRIB_API ERROR   :  File contains 6024 GRIBs, 6024 left in internal description, 5060 in request
+GRIB_API ERROR   :  Internal description
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_06.grib'.
+GRIB,
+    origin     = ecmf,
+    hdate      = 20050630/20060630/20070630/20080630/20090630/20100630/20110630/20120630/20130630/20140630/20150630,
+    levtype    = sfc,
+    number     = 6/7/8/9/10/1/2/3/4/5,
+    date       = 20160630,
+    time       = 0.0,
+    step       = 840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104/0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840,
+    param      = t2m,
+    expver     = prod,
+    class      = s2,
+    model      = glob,
+    type       = pf,
+    stream     = enfh,
+    _long_name = 2 metre temperature,
+    _units     = K,
+    _cf_name   = air_temperature,
+    _validation = 58886088.000000/58886112.000000/58886136.000000/58886160.000000/58886184.000000/58886208.000000/58886232.000000/58886256.000000/58886280.000000/58886304.000000/58886328.000000/58894008.000000/58894032.000000/58894056.000000/58894080.000000/58894104.000000/58894128.000000/58894152.000000/58894176.000000/58894200.000000/58894224.000000/58894248.000000/58894272.000000/58894296.000000/58894320.000000/58894344.000000/58894368.000000/58894392.000000/58894416.000000/58894440.000000/58894464.000000/58894488.000000/58894512.000000/58894536.000000/58894560.000000/58894584.000000/58894608.000000/58894632.000000/58894656.000000/58894680.000000/58894704.000000/58894728.000000/58894752.000000/58894776.000000/58894800.000000/58894824.000000/58894848.000000/58894872.000000/58894896.000000/58894920.000000/58894944.000000/58894968.000000/58894992.000000/58895016.000000/58895040.000000/58895064.000000/58895088.000000/58902768.000000/58902792.000000/58902816.000000/58902840.000000/58902864.000000/58902888.000000/58902912.000000/58902936.000000/58902960.000000/58902984.000000/58903008.000000/58903032.000000/58903056.000000/58903080.000000/58903104.000000/58903128.000000/58903152.000000/58903176.000000/58903200.000000/58903224.000000/58903248.000000/58903272.000000/58903296.000000/58903320.000000/58903344.000000/58903368.000000/58903392.000000/58903416.000000/58903440.000000/58903464.000000/58903488.000000/58903512.000000/58903536.000000/58903560.000000/58903584.000000/58903608.000000/58903632.000000/58903656.000000/58903680.000000/58903704.000000/58903728.000000/58903752.000000/58903776.000000/58903800.000000/58903824.000000/58903848.000000/58911552.000000/58911576.000000/58911600.000000/58911624.000000/58911648.000000/58911672.000000/58911696.000000/58911720.000000/58911744.000000/58911768.000000/58911792.000000/58911816.000000/58911840.000000/58911864.000000/58911888.000000/58911912.000000/58911936.000000/58911960.000000/58911984.000000/58912008.000000/58912032.000000/58912056.000000/58912080.000000/58912104.000000/58912128.000000/58912152.000000/58912176.000000/58912200.000000/58912224.000000/58912248.000000/58912272.000000/58912296.000000/58912320.000000/58912344.000000/58912368.000000/58912392.000000/58912416.000000/58912440.000000/58912464.000000/58912488.000000/58912512.000000/58912536.000000/58912560.000000/58912584.000000/58912608.000000/58912632.000000/58920312.000000/58920336.000000/58920360.000000/58920384.000000/58920408.000000/58920432.000000/58920456.000000/58920480.000000/58920504.000000/58920528.000000/58920552.000000/58920576.000000/58920600.000000/58920624.000000/58920648.000000/58920672.000000/58920696.000000/58920720.000000/58920744.000000/58920768.000000/58920792.000000/58920816.000000/58920840.000000/58920864.000000/58920888.000000/58920912.000000/58920936.000000/58920960.000000/58920984.000000/58921008.000000/58921032.000000/58921056.000000/58921080.000000/58921104.000000/58921128.000000/58921152.000000/58921176.000000/58921200.000000/58921224.000000/58921248.000000/58921272.000000/58921296.000000/58921320.000000/58921344.000000/58921368.000000/58921392.000000/58929072.000000/58929096.000000/58929120.000000/58929144.000000/58929168.000000/58929192.000000/58929216.000000/58929240.000000/58929264.000000/58929288.000000/58929312.000000/58929336.000000/58929360.000000/58929384.000000/58929408.000000/58929432.000000/58929456.000000/58929480.000000/58929504.000000/58929528.000000/58929552.000000/58929576.000000/58929600.000000/58929624.000000/58929648.000000/58929672.000000/58929696.000000/58929720.000000/58929744.000000/58929768.000000/58929792.000000/58929816.000000/58929840.000000/58929864.000000/58929888.000000/58929912.000000/58929936.000000/58929960.000000/58929984.000000/58930008.000000/58930032.000000/58930056.000000/58930080.000000/58930104.000000/58930128.000000/58930152.000000/58937832.000000/58937856.000000/58937880.000000/58937904.000000/58937928.000000/58937952.000000/58937976.000000/58938000.000000/58938024.000000/58938048.000000/58938072.000000/58938096.000000/58938120.000000/58938144.000000/58938168.000000/58938192.000000/58938216.000000/58938240.000000/58938264.000000/58938288.000000/58938312.000000/58938336.000000/58938360.000000/58938384.000000/58938408.000000/58938432.000000/58938456.000000/58938480.000000/58938504.000000/58938528.000000/58938552.000000/58938576.000000/58938600.000000/58938624.000000/58938648.000000/58938672.000000/58938696.000000/58938720.000000/58938744.000000/58938768.000000/58938792.000000/58938816.000000/58938840.000000/58938864.000000/58938888.000000/58938912.000000/58946616.000000/58946640.000000/58946664.000000/58946688.000000/58946712.000000/58946736.000000/58946760.000000/58946784.000000/58946808.000000/58946832.000000/58946856.000000/58946880.000000/58946904.000000/58946928.000000/58946952.000000/58946976.000000/58947000.000000/58947024.000000/58947048.000000/58947072.000000/58947096.000000/58947120.000000/58947144.000000/58947168.000000/58947192.000000/58947216.000000/58947240.000000/58947264.000000/58947288.000000/58947312.000000/58947336.000000/58947360.000000/58947384.000000/58947408.000000/58947432.000000/58947456.000000/58947480.000000/58947504.000000/58947528.000000/58947552.000000/58947576.000000/58947600.000000/58947624.000000/58947648.000000/58947672.000000/58947696.000000/58955376.000000/58955400.000000/58955424.000000/58955448.000000/58955472.000000/58955496.000000/58955520.000000/58955544.000000/58955568.000000/58955592.000000/58955616.000000/58955640.000000/58955664.000000/58955688.000000/58955712.000000/58955736.000000/58955760.000000/58955784.000000/58955808.000000/58955832.000000/58955856.000000/58955880.000000/58955904.000000/58955928.000000/58955952.000000/58955976.000000/58956000.000000/58956024.000000/58956048.000000/58956072.000000/58956096.000000/58956120.000000/58956144.000000/58956168.000000/58956192.000000/58956216.000000/58956240.000000/58956264.000000/58956288.000000/58956312.000000/58956336.000000/58956360.000000/58956384.000000/58956408.000000/58956432.000000/58956456.000000/58964136.000000/58964160.000000/58964184.000000/58964208.000000/58964232.000000/58964256.000000/58964280.000000/58964304.000000/58964328.000000/58964352.000000/58964376.000000/58964400.000000/58964424.000000/58964448.000000/58964472.000000/58964496.000000/58964520.000000/58964544.000000/58964568.000000/58964592.000000/58964616.000000/58964640.000000/58964664.000000/58964688.000000/58964712.000000/58964736.000000/58964760.000000/58964784.000000/58964808.000000/58964832.000000/58964856.000000/58964880.000000/58964904.000000/58964928.000000/58964952.000000/58964976.000000/58965000.000000/58965024.000000/58965048.000000/58965072.000000/58965096.000000/58965120.000000/58965144.000000/58965168.000000/58965192.000000/58965216.000000/58972896.000000/58972920.000000/58972944.000000/58972968.000000/58972992.000000/58973016.000000/58973040.000000/58973064.000000/58973088.000000/58973112.000000/58973136.000000/58973160.000000/58973184.000000/58973208.000000/58973232.000000/58973256.000000/58973280.000000/58973304.000000/58973328.000000/58973352.000000/58973376.000000/58973400.000000/58973424.000000/58973448.000000/58973472.000000/58973496.000000/58973520.000000/58973544.000000/58973568.000000/58973592.000000/58973616.000000/58973640.000000/58973664.000000/58973688.000000/58973712.000000/58973736.000000/58973760.000000/58973784.000000/58973808.000000/58973832.000000/58973856.000000/58973880.000000/58973904.000000/58973928.000000/58973952.000000/58973976.000000,
+    _juliandate = 2453552/2453917/2454282/2454648/2455013/2455378/2455743/2456109/2456474/2456839/2457204,
+    _validationtime = 925584.000000/925608.000000/925632.000000/925656.000000/925680.000000/925704.000000/925728.000000/925752.000000/925776.000000/925800.000000/925824.000000/933504.000000/933528.000000/933552.000000/933576.000000/933600.000000/933624.000000/933648.000000/933672.000000/933696.000000/933720.000000/933744.000000/933768.000000/933792.000000/933816.000000/933840.000000/933864.000000/933888.000000/933912.000000/933936.000000/933960.000000/933984.000000/934008.000000/934032.000000/934056.000000/934080.000000/934104.000000/934128.000000/934152.000000/934176.000000/934200.000000/934224.000000/934248.000000/934272.000000/934296.000000/934320.000000/934344.000000/934368.000000/934392.000000/934416.000000/934440.000000/934464.000000/934488.000000/934512.000000/934536.000000/934560.000000/934584.000000/942264.000000/942288.000000/942312.000000/942336.000000/942360.000000/942384.000000/942408.000000/942432.000000/942456.000000/942480.000000/942504.000000/942528.000000/942552.000000/942576.000000/942600.000000/942624.000000/942648.000000/942672.000000/942696.000000/942720.000000/942744.000000/942768.000000/942792.000000/942816.000000/942840.000000/942864.000000/942888.000000/942912.000000/942936.000000/942960.000000/942984.000000/943008.000000/943032.000000/943056.000000/943080.000000/943104.000000/943128.000000/943152.000000/943176.000000/943200.000000/943224.000000/943248.000000/943272.000000/943296.000000/943320.000000/943344.000000/951048.000000/951072.000000/951096.000000/951120.000000/951144.000000/951168.000000/951192.000000/951216.000000/951240.000000/951264.000000/951288.000000/951312.000000/951336.000000/951360.000000/951384.000000/951408.000000/951432.000000/951456.000000/951480.000000/951504.000000/951528.000000/951552.000000/951576.000000/951600.000000/951624.000000/951648.000000/951672.000000/951696.000000/951720.000000/951744.000000/951768.000000/951792.000000/951816.000000/951840.000000/951864.000000/951888.000000/951912.000000/951936.000000/951960.000000/951984.000000/952008.000000/952032.000000/952056.000000/952080.000000/952104.000000/952128.000000/959808.000000/959832.000000/959856.000000/959880.000000/959904.000000/959928.000000/959952.000000/959976.000000/960000.000000/960024.000000/960048.000000/960072.000000/960096.000000/960120.000000/960144.000000/960168.000000/960192.000000/960216.000000/960240.000000/960264.000000/960288.000000/960312.000000/960336.000000/960360.000000/960384.000000/960408.000000/960432.000000/960456.000000/960480.000000/960504.000000/960528.000000/960552.000000/960576.000000/960600.000000/960624.000000/960648.000000/960672.000000/960696.000000/960720.000000/960744.000000/960768.000000/960792.000000/960816.000000/960840.000000/960864.000000/960888.000000/968568.000000/968592.000000/968616.000000/968640.000000/968664.000000/968688.000000/968712.000000/968736.000000/968760.000000/968784.000000/968808.000000/968832.000000/968856.000000/968880.000000/968904.000000/968928.000000/968952.000000/968976.000000/969000.000000/969024.000000/969048.000000/969072.000000/969096.000000/969120.000000/969144.000000/969168.000000/969192.000000/969216.000000/969240.000000/969264.000000/969288.000000/969312.000000/969336.000000/969360.000000/969384.000000/969408.000000/969432.000000/969456.000000/969480.000000/969504.000000/969528.000000/969552.000000/969576.000000/969600.000000/969624.000000/969648.000000/977328.000000/977352.000000/977376.000000/977400.000000/977424.000000/977448.000000/977472.000000/977496.000000/977520.000000/977544.000000/977568.000000/977592.000000/977616.000000/977640.000000/977664.000000/977688.000000/977712.000000/977736.000000/977760.000000/977784.000000/977808.000000/977832.000000/977856.000000/977880.000000/977904.000000/977928.000000/977952.000000/977976.000000/978000.000000/978024.000000/978048.000000/978072.000000/978096.000000/978120.000000/978144.000000/978168.000000/978192.000000/978216.000000/978240.000000/978264.000000/978288.000000/978312.000000/978336.000000/978360.000000/978384.000000/978408.000000/986112.000000/986136.000000/986160.000000/986184.000000/986208.000000/986232.000000/986256.000000/986280.000000/986304.000000/986328.000000/986352.000000/986376.000000/986400.000000/986424.000000/986448.000000/986472.000000/986496.000000/986520.000000/986544.000000/986568.000000/986592.000000/986616.000000/986640.000000/986664.000000/986688.000000/986712.000000/986736.000000/986760.000000/986784.000000/986808.000000/986832.000000/986856.000000/986880.000000/986904.000000/986928.000000/986952.000000/986976.000000/987000.000000/987024.000000/987048.000000/987072.000000/987096.000000/987120.000000/987144.000000/987168.000000/987192.000000/994872.000000/994896.000000/994920.000000/994944.000000/994968.000000/994992.000000/995016.000000/995040.000000/995064.000000/995088.000000/995112.000000/995136.000000/995160.000000/995184.000000/995208.000000/995232.000000/995256.000000/995280.000000/995304.000000/995328.000000/995352.000000/995376.000000/995400.000000/995424.000000/995448.000000/995472.000000/995496.000000/995520.000000/995544.000000/995568.000000/995592.000000/995616.000000/995640.000000/995664.000000/995688.000000/995712.000000/995736.000000/995760.000000/995784.000000/995808.000000/995832.000000/995856.000000/995880.000000/995904.000000/995928.000000/995952.000000/1003632.000000/1003656.000000/1003680.000000/1003704.000000/1003728.000000/1003752.000000/1003776.000000/1003800.000000/1003824.000000/1003848.000000/1003872.000000/1003896.000000/1003920.000000/1003944.000000/1003968.000000/1003992.000000/1004016.000000/1004040.000000/1004064.000000/1004088.000000/1004112.000000/1004136.000000/1004160.000000/1004184.000000/1004208.000000/1004232.000000/1004256.000000/1004280.000000/1004304.000000/1004328.000000/1004352.000000/1004376.000000/1004400.000000/1004424.000000/1004448.000000/1004472.000000/1004496.000000/1004520.000000/1004544.000000/1004568.000000/1004592.000000/1004616.000000/1004640.000000/1004664.000000/1004688.000000/1004712.000000/1012392.000000/1012416.000000/1012440.000000/1012464.000000/1012488.000000/1012512.000000/1012536.000000/1012560.000000/1012584.000000/1012608.000000/1012632.000000/1012656.000000/1012680.000000/1012704.000000/1012728.000000/1012752.000000/1012776.000000/1012800.000000/1012824.000000/1012848.000000/1012872.000000/1012896.000000/1012920.000000/1012944.000000/1012968.000000/1012992.000000/1013016.000000/1013040.000000/1013064.000000/1013088.000000/1013112.000000/1013136.000000/1013160.000000/1013184.000000/1013208.000000/1013232.000000/1013256.000000/1013280.000000/1013304.000000/1013328.000000/1013352.000000/1013376.000000/1013400.000000/1013424.000000/1013448.000000/1013472.000000
+
+2018-09-20 15:19:18 ECMWF API python library 1.5.0
+2018-09-20 15:19:18 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:19:19 Welcome Mariano Alvarez
+2018-09-20 15:19:20 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:19:20 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:19:21 Request submitted
+2018-09-20 15:19:21 Request id: 5ba3e5b1bcd31991d75ed4a5
+2018-09-20 15:19:21 Request is queued
+2018-09-20 15:19:35 Request is active
+Calling 'nice mars /tmp/46/c2/tmp-_mars2ZOMyB.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.182400 - Welcome to MARS
+mars - INFO   - 20180920.182400 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.182400 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.182400 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.182400 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.182400 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.182400 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20160602/20160609/20160616/20160623/20160630,type=pf,class=s2,expect=anymars - INFO   - 20180920.182401 - Automatic split by date is on
+
+mars - INFO   - 20180920.182401 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20160602/20160609/20160616/20160623/20160630
+
+mars - INFO   - 20180920.182401 - Web API request id: 5ba3e5b1bcd31991d75ed4a5
+mars - INFO   - 20180920.182401 - Requesting any number of fields (request describes 11500)
+mars - INFO   - 20180920.182401 - Calling mars on 'marsth', callback on 34552
+mars - INFO   - 20180920.182401 - Server task is 747 [marsth]
+mars - INFO   - 20180920.182401 - Request cost: 46,000 fields, 2.49732 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.182402 - Transfering 2681478000 bytes
+mars - INFO   - 20180920.182819 - 46000 fields retrieved from 'marsth'
+mars - WARN   - 20180920.182819 - Visiting database marsth : expected 0, got 46000
+mars - INFO   - 20180920.182819 - 46000 fields have been interpolated
+mars - INFO   - 20180920.182819 - Request time:  wall: 4 min 18 sec  cpu: 4 min 12 sec
+mars - INFO   - 20180920.182819 -   Read from network: 2.50 Gbyte(s) in 6 sec  [419.85 Mbyte/sec]
+mars - INFO   - 20180920.182819 -   Processing in marsth: wall: 1 sec
+mars - INFO   - 20180920.182819 -   Visiting marsth: wall: 4 min 18 sec
+mars - INFO   - 20180920.182819 -   Post-processing: wall: 2 min 33 sec cpu: 2 min 32 sec
+mars - INFO   - 20180920.182819 -   Writing to target file: 207.19 Mbyte(s) in 1 sec  [179.19 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.182819 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.182819 - No errors reported
+Process '['nice', 'mars', '/tmp/46/c2/tmp-_mars2ZOMyB.req']' finished
+2018-09-20 15:24:19 Request is complete
+2018-09-20 15:24:19 Transfering 21.1387 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_06.grib
+2018-09-20 15:24:19 From https://stream.ecmwf.int/data/atls14/data/data01/scratch/66/4b/_mars-atls14-95e2cf679cd58ee9b4db4dd119a05a8d-wd0b48.grib
+2018-09-20 15:24:35 Transfer rate 1.34784 Mbytes/s
+2018-09-20 15:25:02 ECMWF API python library 1.5.0
+2018-09-20 15:25:02 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:25:03 Welcome Mariano Alvarez
+2018-09-20 15:25:04 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:25:04 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:25:05 Request submitted
+2018-09-20 15:25:05 Request id: 5ba3e709bcd31991be5ed493
+2018-09-20 15:25:05 Request is queued
+Calling 'nice mars /tmp/9f/a1/tmp-_marsJ10gIu.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.183159 - Welcome to MARS
+mars - INFO   - 20180920.183159 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.183159 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.183159 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.183159 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.183159 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.183159 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20160602/20160609/20160616/20160623/20160630,type=cf,class=s2,expect=anymars - INFO   - 20180920.183159 - Automatic split by date is on
+
+mars - INFO   - 20180920.183159 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20160602/20160609/20160616/20160623/20160630
+
+mars - INFO   - 20180920.183159 - Web API request id: 5ba3e709bcd31991be5ed493
+mars - INFO   - 20180920.183159 - Requesting any number of fields (request describes 230)
+mars - INFO   - 20180920.183159 - Calling mars on 'marsth', callback on 39577
+mars - INFO   - 20180920.183159 - Server task is 260 [marsth]
+mars - INFO   - 20180920.183159 - Request cost: 4,600 fields, 255.726 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.183200 - Transfering 268147800 bytes
+2018-09-20 15:27:41 Request is active
+mars - INFO   - 20180920.183225 - 4600 fields retrieved from 'marsth'grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_06.grib'.
+grib_to_netcdf: Found 5044 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_08.grib'.
+grib_to_netcdf: Found 36800 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20150702/20150709/20150716/20150723/20150730
+
+mars - INFO   - 20180920.182303 - Web API request id: 5ba3e566c7db1ca800d99a27
+mars - INFO   - 20180920.182303 - Requesting any number of fields (request describes 230)
+mars - INFO   - 20180920.182303 - Calling mars on 'marsth', callback on 36447
+mars - INFO   - 20180920.182303 - Server task is 747 [marsth]
+mars - INFO   - 20180920.182303 - Request cost: 4,600 fields, 255.726 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.182303 - Transfering 268147800 bytes
+2018-09-20 15:18:40 Request is active
+mars - INFO   - 20180920.182330 - 4600 fields retrieved from 'marsth'
+mars - WARN   - 20180920.182330 - Visiting database marsth : expected 0, got 4600
+mars - INFO   - 20180920.182330 - 4600 fields have been interpolated
+mars - INFO   - 20180920.182330 - Request time:  wall: 27 sec  cpu: 26 sec
+mars - INFO   - 20180920.182330 -   Read from network: 255.73 Mbyte(s) in < 1 sec [540.53 Mbyte/sec]
+mars - INFO   - 20180920.182330 -   Visiting marsth: wall: 27 sec
+mars - INFO   - 20180920.182330 -   Post-processing: wall: 16 sec cpu: 16 sec
+mars - INFO   - 20180920.182330 -   Writing to target file: 20.72 Mbyte(s) in < 1 sec [183.56 Mbyte/sec]
+mars - INFO   - 20180920.182330 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.182330 - No errors reported
+Process '['nice', 'mars', '/tmp/5d/ec/tmp-_marsdCdcYQ.req']' finished
+2018-09-20 15:19:11 Request is complete
+2018-09-20 15:19:11 Transfering 20.7193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_07.grib
+2018-09-20 15:19:11 From https://stream.ecmwf.int/data/atls13/data/data04/scratch/ec/c3/_mars-atls13-a562cefde8a29a7288fa0b8b7f9413f7-D1m4Le.grib
+2018-09-20 15:19:24 Transfer rate 1.56547 Mbytes/s
+2018-09-20 15:19:50 ECMWF API python library 1.5.0
+2018-09-20 15:19:50 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:19:51 Welcome Mariano Alvarez
+2018-09-20 15:19:52 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:19:52 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:19:53 Request submitted
+2018-09-20 15:19:53 Request id: 5ba3e5d1c8ca19be5c1fdf4a
+2018-09-20 15:19:53 Request is queued
+Calling 'nice mars /tmp/2c/e9/tmp-_marsuv5Djo.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.182437 - Welcome to MARS
+mars - INFO   - 20180920.182437 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.182437 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.182437 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.182437 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.182437 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.182437 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150806/20150813/20150820/20150827,type=pf,class=s2,expect=anymars - INFO   - 20180920.182437 - Automatic split by date is on
+
+mars - INFO   - 20180920.182437 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+2018-09-20 15:20:13 Request is active
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20150806/20150813/20150820/20150827
+
+mars - INFO   - 20180920.182437 - Web API request id: 5ba3e5d1c8ca19be5c1fdf4a
+mars - INFO   - 20180920.182437 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.182437 - Calling mars on 'marsth', callback on 42133
+mars - INFO   - 20180920.182438 - Server task is 260 [marsth]
+mars - INFO   - 20180920.182438 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.182438 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.182759 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.182759 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.182759 - 36800 fields have been interpolated
+mars - INFO   - 20180920.182759 - Request time:  wall: 3 min 21 sec  cpu: 3 min 20 sec
+mars - INFO   - 20180920.182759 -   Read from network: 2.00 Gbyte(s) in 2 sec  [1.07 Gbyte/sec]
+mars - INFO   - 20180920.182759 -   Visiting marsth: wall: 3 min 21 sec
+mars - INFO   - 20180920.182759 -   Post-processing: wall: 2 min 1 sec cpu: 2 min 1 sec
+mars - INFO   - 20180920.182759 -   Writing to target file: 165.75 Mbyte(s) in < 1 sec [170.53 Mbyte/sec]
+mars - INFO   - 20180920.182759 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.182759 - No errors reported
+Process '['nice', 'mars', '/tmp/2c/e9/tmp-_marsuv5Djo.req']' finished
+2018-09-20 15:23:55 Request is complete
+2018-09-20 15:23:55 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2015_08.grib
+2018-09-20 15:23:55 From https://stream.ecmwf.int/data/atls06/data/data02/scratch/59/30/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-ixTS1X.grib
+2018-09-20 15:25:55 Transfer rate 1.37309 Mbytes/s
+2018-09-20 15:29:06 ECMWF API python library 1.5.0
+2018-09-20 15:29:06 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:29:07 Welcome Mariano Alvarez
+2018-09-20 15:29:08 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:29:08 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:29:09 Request submitted
+2018-09-20 15:29:09 Request id: 5ba3e7fdcad519973003139c
+2018-09-20 15:29:09 Request is queued
+Calling 'nice mars /tmp/2e/fe/tmp-_mars8APU5p.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.183402 - Welcome to MARS
+mars - INFO   - 20180920.183402 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.183402 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.183402 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.183402 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.183402 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.183402 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20150806/20150813/20150820/20150827,type=cf,class=s2,expect=anymars - INFO   - 20180920.183402 - Automatic split by date is ongrib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_08.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+
+mars - INFO   - 20180920.183402 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20150806/20150813/20150820/20150827
+
+mars - INFO   - 20180920.183402 - Web API request id: 5ba3e7fdcad519973003139c
+mars - INFO   - 20180920.183402 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.183402 - Calling mars on 'marsth', callback on 59451
+mars - INFO   - 20180920.183402 - Server task is 258 [marsth]
+mars - INFO   - 20180920.183402 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.183402 - Transfering 214518240 bytes
+2018-09-20 15:29:39 Request is active
+mars - INFO   - 20180920.183426 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.183426 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.183426 - 3680 fields have been interpolated
+mars - INFO   - 20180920.183426 - Request time:  wall: 25 sec  cpu: 24 sec
+mars - INFO   - 20180920.183426 -   Read from network: 204.58 Mbyte(s) in < 1 sec [362.33 Mbyte/sec]
+mars - INFO   - 20180920.183426 -   Visiting marsth: wall: 25 sec
+mars - INFO   - 20180920.183426 -   Post-processing: wall: 15 sec cpu: 14 sec
+mars - INFO   - 20180920.183426 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [100.32 Mbyte/sec]
+mars - INFO   - 20180920.183426 - Memory used: 44.30 Mbyte(s)
+mars - INFO   - 20180920.183426 - No errors reported
+Process '['nice', 'mars', '/tmp/2e/fe/tmp-_mars8APU5p.req']' finished
+2018-09-20 15:30:04 Request is complete
+2018-09-20 15:30:04 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2015_08.grib
+2018-09-20 15:30:04 From https://stream.ecmwf.int/data/atls14/data/data05/scratch/f7/10/_mars-atls14-70e05f9f8ba4e9d19932f1c45a7be8d8-778bVD.grib
+2018-09-20 15:30:17 Transfer rate 1.25943 Mbytes/s
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_07.grib'.
+grib_to_netcdf: Found 38131 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+mars - WARN   - 20180920.183225 - Visiting database marsth : expected 0, got 4600
+mars - INFO   - 20180920.183225 - 4600 fields have been interpolated
+mars - INFO   - 20180920.183225 - Request time:  wall: 26 sec  cpu: 25 sec
+mars - INFO   - 20180920.183225 -   Read from network: 255.73 Mbyte(s) in < 1 sec [1.02 Gbyte/sec]
+mars - INFO   - 20180920.183225 -   Visiting marsth: wall: 26 sec
+mars - INFO   - 20180920.183225 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20180920.183225 -   Writing to target file: 20.72 Mbyte(s) in < 1 sec [168.77 Mbyte/sec]
+mars - INFO   - 20180920.183225 - Memory used: 44.26 Mbyte(s)
+mars - INFO   - 20180920.183225 - No errors reported
+Process '['nice', 'mars', '/tmp/9f/a1/tmp-_marsJ10gIu.req']' finished
+2018-09-20 15:28:06 Request is complete
+2018-09-20 15:28:06 Transfering 20.7193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_06.grib
+2018-09-20 15:28:06 From https://stream.ecmwf.int/data/atls05/data/data02/scratch/b2/9c/_mars-atls05-a82bacafb5c306db76464bc7e824bb75-Rd99zN.grib
+2018-09-20 15:28:19 Transfer rate 1.64723 Mbytes/s
+2018-09-20 15:28:51 ECMWF API python library 1.5.0
+2018-09-20 15:28:51 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:28:52 Welcome Mariano Alvarez
+2018-09-20 15:28:53 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:28:53 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:28:54 Request submitted
+2018-09-20 15:28:54 Request id: 5ba3e7eebbd91c9dc2c0d094
+2018-09-20 15:28:54 Request is queued
+Calling 'nice mars /tmp/40/64/tmp-_marsfqnvVY.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.183336 - Welcome to MARS
+mars - INFO   - 20180920.183336 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.183336 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.183336 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.183336 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.183336 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.183336 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20160707/20160714/20160721/20160728,type=pf,class=s2,expect=anymars - INFO   - 20180920.183336 - Automatic split by date is on
+
+mars - INFO   - 20180920.183336 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20160707/20160714/20160721/20160728
+
+mars - INFO   - 20180920.183336 - Web API request id: 5ba3e7eebbd91c9dc2c0d094
+mars - INFO   - 20180920.183336 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.183336 - Calling mars on 'marsth', callback on 53280
+mars - INFO   - 20180920.183337 - Server task is 843 [marsth]
+mars - INFO   - 20180920.183337 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.183337 - Transfering 2145182400 bytes
+2018-09-20 15:29:15 Request is active
+mars - INFO   - 20180920.183713 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.183713 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.183713 - 36800 fields have been interpolated
+mars - INFO   - 20180920.183713 - Request time:  wall: 3 min 37 sec  cpu: 3 min 34 sec
+mars - INFO   - 20180920.183713 -   Read from network: 2.00 Gbyte(s) in 3 sec  [799.75 Mbyte/sec]
+mars - INFO   - 20180920.183713 -   Processing in marsth: wall: 1 sec
+mars - INFO   - 20180920.183713 -   Visiting marsth: wall: 3 min 37 sec
+mars - INFO   - 20180920.183713 -   Post-processing: wall: 2 min 10 sec cpu: 2 min 10 sec
+mars - INFO   - 20180920.183713 -   Writing to target file: 165.75 Mbyte(s) in 1 sec  [122.88 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.183713 - Memory used: 46.33 Mbyte(s)
+mars - INFO   - 20180920.183713 - No errors reported
+Process '['nice', 'mars', '/tmp/40/64/tmp-_marsfqnvVY.req']' finished
+2018-09-20 15:33:05 Request is complete
+2018-09-20 15:33:05 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_07.grib
+2018-09-20 15:33:05 From https://stream.ecmwf.int/data/atls12/data/data02/scratch/d1/f2/_mars-atls12-a82bacafb5c306db76464bc7e824bb75-LhU4qF.grib
+2018-09-20 15:34:30 Transfer rate 1.94763 Mbytes/s
+2018-09-20 15:37:46 ECMWF API python library 1.5.0
+2018-09-20 15:37:46 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:37:47 Welcome Mariano Alvarez
+2018-09-20 15:37:48 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:37:48 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:37:49 Request submitted
+2018-09-20 15:37:49 Request id: 5ba3ea062fd81c975fdacbb9
+2018-09-20 15:37:49 Request is queued
+Calling 'nice mars /tmp/0d/04/tmp-_mars7ZWYt6.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.184218 - Welcome to MARS
+mars - INFO   - 20180920.184218 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.184218 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.184218 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.184218 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.184218 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.184218 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20160707/20160714/20160721/20160728,type=cf,class=s2,expect=anymars - INFO   - 20180920.184218 - Automatic split by date is on
+
+mars - INFO   - 20180920.184218 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_07.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_08.grib'.
+grib_to_netcdf: Found 41461 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20160707/20160714/20160721/20160728
+
+mars - INFO   - 20180920.184218 - Web API request id: 5ba3ea062fd81c975fdacbb9
+mars - INFO   - 20180920.184218 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.184218 - Calling mars on 'marsth', callback on 37241
+mars - INFO   - 20180920.184218 - Server task is 23 [marsth]
+mars - INFO   - 20180920.184218 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.184220 - Transfering 214518240 bytes
+2018-09-20 15:37:58 Request is active
+mars - INFO   - 20180920.184244 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.184244 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.184244 - 3680 fields have been interpolated
+mars - INFO   - 20180920.184244 - Request time:  wall: 26 sec  cpu: 20 sec
+mars - INFO   - 20180920.184244 -   Read from network: 204.58 Mbyte(s) in 3 sec  [63.85 Mbyte/sec]
+mars - INFO   - 20180920.184244 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.184244 -   Visiting marsth: wall: 26 sec
+mars - INFO   - 20180920.184244 -   Post-processing: wall: 12 sec cpu: 12 sec
+mars - INFO   - 20180920.184244 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [153.84 Mbyte/sec]
+mars - INFO   - 20180920.184244 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.184244 - No errors reported
+Process '['nice', 'mars', '/tmp/0d/04/tmp-_mars7ZWYt6.req']' finished
+2018-09-20 15:38:24 Request is complete
+2018-09-20 15:38:24 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_07.grib
+2018-09-20 15:38:24 From https://stream.ecmwf.int/data/atls05/data/data04/scratch/37/20/_mars-atls05-a562cefde8a29a7288fa0b8b7f9413f7-ZBpBzW.grib
+2018-09-20 15:38:34 Transfer rate 1.56291 Mbytes/s
+2018-09-20 15:38:55 ECMWF API python library 1.5.0
+2018-09-20 15:38:55 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:38:56 Welcome Mariano Alvarez
+2018-09-20 15:38:57 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:38:57 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:38:58 Request submitted
+2018-09-20 15:38:58 Request id: 5ba3ea4ac7db1ca7fad99a5c
+2018-09-20 15:38:58 Request is queued
+Calling 'nice mars /tmp/c8/22/tmp-_marsFklbj8.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.184327 - Welcome to MARS
+mars - INFO   - 20180920.184327 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.184327 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.184327 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.184327 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.184327 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.184327 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20160804/20160811/20160818/20160825,type=pf,class=s2,expect=anymars - INFO   - 20180920.184327 - Automatic split by date is on
+
+mars - INFO   - 20180920.184327 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20160804/20160811/20160818/20160825
+
+mars - INFO   - 20180920.184327 - Web API request id: 5ba3ea4ac7db1ca7fad99a5c
+mars - INFO   - 20180920.184327 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.184327 - Calling mars on 'marsth', callback on 46732
+mars - INFO   - 20180920.184328 - Server task is 23 [marsth]
+mars - INFO   - 20180920.184328 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.184329 - Transfering 2145182400 bytes
+2018-09-20 15:39:07 Request is active
+mars - INFO   - 20180920.184753 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.184753 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.184753 - 36800 fields have been interpolated
+mars - INFO   - 20180920.184753 - Request time:  wall: 4 min 26 sec  cpu: 4 min 22 sec
+mars - INFO   - 20180920.184753 -   Read from network: 2.00 Gbyte(s) in 2 sec  [851.53 Mbyte/sec]
+mars - INFO   - 20180920.184753 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.184753 -   Visiting marsth: wall: 4 min 26 sec
+mars - INFO   - 20180920.184753 -   Post-processing: wall: 2 min 36 sec cpu: 2 min 35 sec
+mars - INFO   - 20180920.184753 -   Writing to target file: 165.75 Mbyte(s) in 2 sec  [87.12 Mbyte/sec] cpu: 2 sec
+mars - INFO   - 20180920.184753 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.184753 - No errors reported
+Process '['nice', 'mars', '/tmp/c8/22/tmp-_marsFklbj8.req']' finished
+2018-09-20 15:43:32 Request is complete
+2018-09-20 15:43:32 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2016_08.grib
+2018-09-20 15:43:32 From https://stream.ecmwf.int/data/atls05/data/data03/scratch/e8/a6/_mars-atls05-98f536083ae965b31b0d04811be6f4c6-_utrml.grib
+2018-09-20 15:45:25 Transfer rate 1.46531 Mbytes/s
+2018-09-20 15:49:07 ECMWF API python library 1.5.0
+2018-09-20 15:49:07 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:49:08 Welcome Mariano Alvarez
+2018-09-20 15:49:09 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:49:09 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:49:10 Request submitted
+2018-09-20 15:49:10 Request id: 5ba3ecae2fd81c975bdacb5d
+2018-09-20 15:49:10 Request is queued
+Calling 'nice mars /tmp/91/23/tmp-_marsQ4IIT0.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.185338 - Welcome to MARS
+mars - INFO   - 20180920.185338 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.185338 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.185338 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.185338 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.185338 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.185338 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20160804/20160811/20160818/20160825,type=cf,class=s2,expect=anymars - INFO   - 20180920.185338 - Automatic split by date is ongrib_to_netcdf.c at line 1056: assertion failure Assert(g->handle)
+Aborted (core dumped)
+
+
+mars - INFO   - 20180920.185338 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20160804/20160811/20160818/20160825
+
+mars - INFO   - 20180920.185338 - Web API request id: 5ba3ecae2fd81c975bdacb5d
+mars - INFO   - 20180920.185338 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.185338 - Calling mars on 'marsth', callback on 41525
+mars - INFO   - 20180920.185339 - Server task is 120 [marsth]
+mars - INFO   - 20180920.185339 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.185341 - Transfering 214518240 bytes
+2018-09-20 15:49:19 Request is active
+mars - INFO   - 20180920.185410 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.185410 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.185410 - 3680 fields have been interpolated
+mars - INFO   - 20180920.185410 - Request time:  wall: 32 sec  cpu: 25 sec
+mars - INFO   - 20180920.185410 -   Read from network: 204.58 Mbyte(s) in 4 sec  [56.67 Mbyte/sec]
+mars - INFO   - 20180920.185410 -   Processing in marsth: wall: 3 sec
+mars - INFO   - 20180920.185410 -   Visiting marsth: wall: 32 sec
+mars - INFO   - 20180920.185410 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20180920.185410 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [78.95 Mbyte/sec]
+mars - INFO   - 20180920.185410 - Memory used: 44.32 Mbyte(s)
+mars - INFO   - 20180920.185410 - No errors reported
+Process '['nice', 'mars', '/tmp/91/23/tmp-_marsQ4IIT0.req']' finished
+2018-09-20 15:49:49 Request is complete
+2018-09-20 15:49:49 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2016_08.grib
+2018-09-20 15:49:49 From https://stream.ecmwf.int/data/atls06/data/data05/scratch/99/5e/_mars-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-A3krTL.grib
+2018-09-20 15:50:02 Transfer rate 1.3131 Mbytes/s
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2017_06.grib'.
+grib_to_netcdf: Found 57766 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2017_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+2018-09-20 15:50:13 ECMWF API python library 1.5.0
+2018-09-20 15:50:13 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 15:50:14 Welcome Mariano Alvarez
+2018-09-20 15:50:15 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 15:50:15 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 15:50:17 Request submitted
+2018-09-20 15:50:17 Request id: 5ba3ecf1cad519972703136d
+2018-09-20 15:50:17 Request is queued
+2018-09-20 15:50:19 Request is active
+Calling 'nice mars /tmp/a9/b1/tmp-_mars4XmkBG.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.185444 - Welcome to MARS
+mars - INFO   - 20180920.185444 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.185444 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.185444 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.185444 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.185444 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.185444 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20170601/20170608/20170615/20170622/20170629,type=pf,class=s2,expect=anymars - INFO   - 20180920.185444 - Automatic split by date is on
+
+mars - INFO   - 20180920.185444 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20170601/20170608/20170615/20170622/20170629
+
+mars - INFO   - 20180920.185444 - Web API request id: 5ba3ecf1cad519972703136d
+mars - INFO   - 20180920.185444 - Requesting any number of fields (request describes 11500)
+mars - INFO   - 20180920.185444 - Calling mars on 'marsth', callback on 42455
+mars - INFO   - 20180920.185445 - Server task is 120 [marsth]
+mars - INFO   - 20180920.185445 - Request cost: 46,000 fields, 2.49732 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.185446 - Transfering 2681478000 bytes
+mars - INFO   - 20180920.185908 - 46000 fields retrieved from 'marsth'
+mars - WARN   - 20180920.185908 - Visiting database marsth : expected 0, got 46000
+mars - INFO   - 20180920.185908 - 46000 fields have been interpolated
+mars - INFO   - 20180920.185908 - Request time:  wall: 4 min 25 sec  cpu: 4 min 21 sec
+mars - INFO   - 20180920.185908 -   Read from network: 2.50 Gbyte(s) in 3 sec  [969.80 Mbyte/sec]
+mars - INFO   - 20180920.185908 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.185908 -   Visiting marsth: wall: 4 min 25 sec
+mars - INFO   - 20180920.185908 -   Post-processing: wall: 2 min 39 sec cpu: 2 min 38 sec
+mars - INFO   - 20180920.185908 -   Writing to target file: 207.19 Mbyte(s) in 1 sec  [167.09 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.185908 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.185908 - No errors reported
+Process '['nice', 'mars', '/tmp/a9/b1/tmp-_mars4XmkBG.req']' finished
+2018-09-20 15:54:56 Request is complete
+2018-09-20 15:54:56 Transfering 207.193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2017_06.grib
+2018-09-20 15:54:56 From https://stream.ecmwf.int/data/atls06/data/data03/scratch/18/68/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-0T0XVl.grib
+2018-09-20 15:58:06 Transfer rate 1.08776 Mbytes/s
+2018-09-20 16:03:03 ECMWF API python library 1.5.0
+2018-09-20 16:03:03 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:03:05 Welcome Mariano Alvarez
+2018-09-20 16:03:06 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:03:06 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:03:08 Request submitted
+2018-09-20 16:03:08 Request id: 5ba3eff4c7db1ca7fed99a39
+2018-09-20 16:03:08 Request is queued
+2018-09-20 16:03:10 Request is active
+Calling 'nice mars /tmp/d5/eb/tmp-_marscrOJvH.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.190735 - Welcome to MARS
+mars - INFO   - 20180920.190735 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.190735 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.190735 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.190735 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.190735 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.190735 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20170601/20170608/20170615/20170622/20170629,type=cf,class=s2,expect=anymars - INFO   - 20180920.190735 - Automatic split by date is on
+
+mars - INFO   - 20180920.190735 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20170601/20170608/20170615/20170622/20170629
+
+mars - INFO   - 20180920.190735 - Web API request id: 5ba3eff4c7db1ca7fed99a39
+mars - INFO   - 20180920.190735 - Requesting any number of fields (request describes 230)
+mars - INFO   - 20180920.190735 - Calling mars on 'marsth', callback on 58819
+mars - INFO   - 20180920.190736 - Server task is 499 [marsth]
+mars - INFO   - 20180920.190736 - Request cost: 4,600 fields, 255.726 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.190738 - Transfering 268147800 bytes
+mars - INFO   - 20180920.190805 - 4600 fields retrieved from 'marsth'grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_06.grib'.
+grib_to_netcdf: Found 4600 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf.c at line 1056: assertion failure Assert(g->handle)
+Aborted (core dumped)
+
+mars - WARN   - 20180920.190805 - Visiting database marsth : expected 0, got 4600
+mars - INFO   - 20180920.190805 - 4600 fields have been interpolated
+mars - INFO   - 20180920.190805 - Request time:  wall: 30 sec  cpu: 26 sec
+mars - INFO   - 20180920.190805 -   Read from network: 255.73 Mbyte(s) in < 1 sec [333.93 Mbyte/sec]
+mars - INFO   - 20180920.190805 -   Processing in marsth: wall: 3 sec
+mars - INFO   - 20180920.190805 -   Visiting marsth: wall: 30 sec
+mars - INFO   - 20180920.190805 -   Post-processing: wall: 16 sec cpu: 16 sec
+mars - INFO   - 20180920.190805 -   Writing to target file: 20.72 Mbyte(s) in < 1 sec [156.58 Mbyte/sec]
+mars - INFO   - 20180920.190805 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.190805 - No errors reported
+Process '['nice', 'mars', '/tmp/d5/eb/tmp-_marscrOJvH.req']' finished
+2018-09-20 16:03:42 Request is complete
+2018-09-20 16:03:42 Transfering 20.7193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_06.grib
+2018-09-20 16:03:42 From https://stream.ecmwf.int/data/atls13/data/data04/scratch/0f/19/_mars-atls13-a562cefde8a29a7288fa0b8b7f9413f7-_t7o43.grib
+2018-09-20 16:03:59 Transfer rate 1.21273 Mbytes/s
+2018-09-20 16:04:26 ECMWF API python library 1.5.0
+2018-09-20 16:04:26 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:04:27 Welcome Mariano Alvarez
+2018-09-20 16:04:28 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:04:28 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:04:30 Request submitted
+2018-09-20 16:04:30 Request id: 5ba3f046c8ca19be841fdf7b
+2018-09-20 16:04:30 Request is queued
+Calling 'nice mars /tmp/5a/c0/tmp-_marsl31hU4.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.190859 - Welcome to MARS
+mars - INFO   - 20180920.190859 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.190859 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.190859 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.190859 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.190859 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.190859 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20170706/20170713/20170720/20170727,type=pf,class=s2,expect=anymars - INFO   - 20180920.190859 - Automatic split by date is on
+
+mars - INFO   - 20180920.190859 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20170706/20170713/20170720/20170727
+
+mars - INFO   - 20180920.190859 - Web API request id: 5ba3f046c8ca19be841fdf7b
+mars - INFO   - 20180920.190900 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.190900 - Calling mars on 'marsth', callback on 49046
+mars - INFO   - 20180920.190901 - Server task is 921 [marsth]
+mars - INFO   - 20180920.190901 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+2018-09-20 16:04:38 Request is active
+mars - INFO   - 20180920.190903 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.191225 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.191225 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.191225 - 36800 fields have been interpolated
+mars - INFO   - 20180920.191225 - Request time:  wall: 3 min 25 sec  cpu: 3 min 21 sec
+mars - INFO   - 20180920.191225 -   Read from network: 2.00 Gbyte(s) in 2 sec  [1.03 Gbyte/sec]
+mars - INFO   - 20180920.191225 -   Processing in marsth: wall: 3 sec
+mars - INFO   - 20180920.191225 -   Visiting marsth: wall: 3 min 25 sec
+mars - INFO   - 20180920.191225 -   Post-processing: wall: 2 min 2 sec cpu: 2 min 2 sec
+mars - INFO   - 20180920.191225 -   Writing to target file: 165.75 Mbyte(s) in 1 sec  [153.59 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.191225 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.191225 - No errors reported
+Process '['nice', 'mars', '/tmp/5a/c0/tmp-_marsl31hU4.req']' finished
+2018-09-20 16:08:04 Request is complete
+2018-09-20 16:08:04 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2017_07.grib
+2018-09-20 16:08:04 From https://stream.ecmwf.int/data/atls14/data/data03/scratch/a4/d5/_mars-atls14-98f536083ae965b31b0d04811be6f4c6-piWie5.grib
+2018-09-20 16:10:26 Transfer rate 1.17341 Mbytes/s
+2018-09-20 16:10:54 ECMWF API python library 1.5.0
+2018-09-20 16:10:54 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:10:55 Welcome Mariano Alvarez
+2018-09-20 16:10:56 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:10:56 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:10:58 Request submitted
+2018-09-20 16:10:58 Request id: 5ba3f1ca2fd81c9763dacb4a
+2018-09-20 16:10:58 Request is queued
+Calling 'nice mars /tmp/74/39/tmp-_mars_Cu2vK.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.191528 - Welcome to MARS
+mars - INFO   - 20180920.191528 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.191528 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.191528 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.191528 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.191528 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.191528 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20170706/20170713/20170720/20170727,type=cf,class=s2,expect=anymars - INFO   - 20180920.191528 - Automatic split by date is on
+
+mars - INFO   - 20180920.191528 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_07.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf.c at line 1056: assertion failure Assert(g->handle)
+Aborted (core dumped)
+
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20170706/20170713/20170720/20170727
+
+mars - INFO   - 20180920.191528 - Web API request id: 5ba3f1ca2fd81c9763dacb4a
+mars - INFO   - 20180920.191528 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.191528 - Calling mars on 'marsth', callback on 35203
+mars - INFO   - 20180920.191529 - Server task is 663 [marsth]
+mars - INFO   - 20180920.191529 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.191529 - Transfering 214518240 bytes
+2018-09-20 16:11:06 Request is active
+mars - INFO   - 20180920.191549 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.191549 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.191549 - 3680 fields have been interpolated
+mars - INFO   - 20180920.191549 - Request time:  wall: 21 sec  cpu: 19 sec
+mars - INFO   - 20180920.191549 -   Read from network: 204.58 Mbyte(s) in < 1 sec [274.34 Mbyte/sec]
+mars - INFO   - 20180920.191549 -   Visiting marsth: wall: 21 sec
+mars - INFO   - 20180920.191549 -   Post-processing: wall: 12 sec cpu: 12 sec
+mars - INFO   - 20180920.191549 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [217.88 Mbyte/sec]
+mars - INFO   - 20180920.191549 - Memory used: 44.32 Mbyte(s)
+mars - INFO   - 20180920.191549 - No errors reported
+Process '['nice', 'mars', '/tmp/74/39/tmp-_mars_Cu2vK.req']' finished
+2018-09-20 16:11:31 Request is complete
+2018-09-20 16:11:31 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_07.grib
+2018-09-20 16:11:31 From https://stream.ecmwf.int/data/atls04/data/data05/scratch/b2/35/_mars-atls04-70e05f9f8ba4e9d19932f1c45a7be8d8-cAJ57C.grib
+2018-09-20 16:11:46 Transfer rate 1.12037 Mbytes/s
+2018-09-20 16:12:07 ECMWF API python library 1.5.0
+2018-09-20 16:12:07 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:12:08 Welcome Mariano Alvarez
+2018-09-20 16:12:09 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:12:09 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:12:10 Request submitted
+2018-09-20 16:12:10 Request id: 5ba3f212bcd31991905ed4e6
+2018-09-20 16:12:10 Request is queued
+Calling 'nice mars /tmp/c4/5e/tmp-_marsqBiRQj.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.191639 - Welcome to MARS
+mars - INFO   - 20180920.191639 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.191639 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.191639 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.191639 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.191639 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.191639 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20170803/20170810/20170817/20170824/20170831,type=pf,class=s2,expect=anymars - INFO   - 20180920.191639 - Automatic split by date is on
+
+mars - INFO   - 20180920.191639 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20170803/20170810/20170817/20170824/20170831
+
+mars - INFO   - 20180920.191639 - Web API request id: 5ba3f212bcd31991905ed4e6
+mars - INFO   - 20180920.191639 - Requesting any number of fields (request describes 11500)
+mars - INFO   - 20180920.191639 - Calling mars on 'marsth', callback on 51742
+mars - INFO   - 20180920.191640 - Server task is 663 [marsth]
+mars - INFO   - 20180920.191640 - Request cost: 46,000 fields, 2.49732 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.191641 - Transfering 2681478000 bytes
+2018-09-20 16:12:18 Request is active
+mars - INFO   - 20180920.192106 - 46000 fields retrieved from 'marsth'
+mars - WARN   - 20180920.192106 - Visiting database marsth : expected 0, got 46000
+mars - INFO   - 20180920.192106 - 46000 fields have been interpolated
+mars - INFO   - 20180920.192106 - Request time:  wall: 4 min 27 sec  cpu: 4 min 23 sec
+mars - INFO   - 20180920.192106 -   Read from network: 2.50 Gbyte(s) in 2 sec  [1.02 Gbyte/sec]
+mars - INFO   - 20180920.192106 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.192106 -   Visiting marsth: wall: 4 min 27 sec
+mars - INFO   - 20180920.192106 -   Post-processing: wall: 2 min 40 sec cpu: 2 min 39 sec
+mars - INFO   - 20180920.192106 -   Writing to target file: 207.19 Mbyte(s) in 1 sec  [156.63 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.192106 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.192106 - No errors reported
+Process '['nice', 'mars', '/tmp/c4/5e/tmp-_marsqBiRQj.req']' finished
+2018-09-20 16:16:59 Request is complete
+2018-09-20 16:16:59 Transfering 207.193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2017_08.grib
+2018-09-20 16:16:59 From https://stream.ecmwf.int/data/atls13/data/data02/scratch/2c/b8/_mars-atls13-a82bacafb5c306db76464bc7e824bb75-nutUDr.grib
+2018-09-20 16:19:34 Transfer rate 1.33945 Mbytes/s
+2018-09-20 16:22:59 ECMWF API python library 1.5.0
+2018-09-20 16:22:59 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:23:00 Welcome Mariano Alvarez
+2018-09-20 16:23:01 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:23:01 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:23:03 Request submitted
+2018-09-20 16:23:03 Request id: 5ba3f49fbcd319919a5ed4ac
+2018-09-20 16:23:03 Request is queued
+Calling 'nice mars /tmp/50/16/tmp-_marsgUJvtx.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.192734 - Welcome to MARS
+mars - INFO   - 20180920.192734 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.192734 - MARS Client version: 6.22.4grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_08.grib'.
+grib_to_netcdf: Found 4600 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+mars - INFO   - 20180920.192734 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.192734 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.192734 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.192734 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20170803/20170810/20170817/20170824/20170831,type=cf,class=s2,expect=anymars - INFO   - 20180920.192734 - Automatic split by date is on
+
+mars - INFO   - 20180920.192734 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20170803/20170810/20170817/20170824/20170831
+
+mars - INFO   - 20180920.192734 - Web API request id: 5ba3f49fbcd319919a5ed4ac
+mars - INFO   - 20180920.192734 - Requesting any number of fields (request describes 230)
+mars - INFO   - 20180920.192734 - Calling mars on 'marsth', callback on 38587
+mars - INFO   - 20180920.192734 - Server task is 416 [marsth]
+mars - INFO   - 20180920.192734 - Request cost: 4,600 fields, 255.726 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.192735 - Transfering 268147800 bytes
+2018-09-20 16:23:12 Request is active
+mars - INFO   - 20180920.192800 - 4600 fields retrieved from 'marsth'
+mars - WARN   - 20180920.192800 - Visiting database marsth : expected 0, got 4600
+mars - INFO   - 20180920.192800 - 4600 fields have been interpolated
+mars - INFO   - 20180920.192800 - Request time:  wall: 26 sec  cpu: 25 sec
+mars - INFO   - 20180920.192800 -   Read from network: 255.73 Mbyte(s) in < 1 sec [762.48 Mbyte/sec]
+mars - INFO   - 20180920.192800 -   Visiting marsth: wall: 26 sec
+mars - INFO   - 20180920.192800 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20180920.192800 -   Writing to target file: 20.72 Mbyte(s) in < 1 sec [198.35 Mbyte/sec]
+mars - INFO   - 20180920.192800 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.192800 - No errors reported
+Process '['nice', 'mars', '/tmp/50/16/tmp-_marsgUJvtx.req']' finished
+2018-09-20 16:23:37 Request is complete
+2018-09-20 16:23:37 Transfering 20.7193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2017_08.grib
+2018-09-20 16:23:37 From https://stream.ecmwf.int/data/atls06/data/data02/scratch/c2/60/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-wOI3qr.grib
+2018-09-20 16:23:54 Transfer rate 1.18425 Mbytes/s
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_06.grib'.
+grib_to_netcdf: Found 36800 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+2018-09-20 16:24:22 ECMWF API python library 1.5.0
+2018-09-20 16:24:22 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:24:23 Welcome Mariano Alvarez
+2018-09-20 16:24:24 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:24:24 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:24:26 Request submitted
+2018-09-20 16:24:26 Request id: 5ba3f4f2bbd91c9dd9c0d077
+2018-09-20 16:24:26 Request is queued
+2018-09-20 16:24:28 Request is active
+Calling 'nice mars /tmp/d9/bf/tmp-_mars7wXvJ5.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.192854 - Welcome to MARS
+mars - INFO   - 20180920.192854 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.192854 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.192854 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.192854 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.192854 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.192854 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20180607/20180614/20180621/20180628,type=pf,class=s2,expect=anymars - INFO   - 20180920.192854 - Automatic split by date is on
+
+mars - INFO   - 20180920.192854 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20180607/20180614/20180621/20180628
+
+mars - INFO   - 20180920.192854 - Web API request id: 5ba3f4f2bbd91c9dd9c0d077
+mars - INFO   - 20180920.192854 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.192854 - Calling mars on 'marsth', callback on 48183
+mars - INFO   - 20180920.192855 - Server task is 955 [marsth]
+mars - INFO   - 20180920.192855 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.192856 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.193240 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.193240 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.193240 - 36800 fields have been interpolated
+mars - INFO   - 20180920.193240 - Request time:  wall: 3 min 46 sec  cpu: 3 min 42 sec
+mars - INFO   - 20180920.193240 -   Read from network: 2.00 Gbyte(s) in 2 sec  [991.12 Mbyte/sec]
+mars - INFO   - 20180920.193240 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.193240 -   Visiting marsth: wall: 3 min 46 sec
+mars - INFO   - 20180920.193240 -   Post-processing: wall: 2 min 15 sec cpu: 2 min 14 sec
+mars - INFO   - 20180920.193240 -   Writing to target file: 165.75 Mbyte(s) in 1 sec  [114.11 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.193240 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.193240 - No errors reported
+Process '['nice', 'mars', '/tmp/d9/bf/tmp-_mars7wXvJ5.req']' finished
+2018-09-20 16:28:16 Request is complete
+2018-09-20 16:28:16 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_06.grib
+2018-09-20 16:28:16 From https://stream.ecmwf.int/data/atls04/data/data02/scratch/ec/74/_mars-atls04-a82bacafb5c306db76464bc7e824bb75-dW3qp_.grib
+2018-09-20 16:30:03 Transfer rate 1.54873 Mbytes/s
+2018-09-20 16:33:14 ECMWF API python library 1.5.0
+2018-09-20 16:33:14 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:33:15 Welcome Mariano Alvarez
+2018-09-20 16:33:16 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:33:16 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:33:18 Request submitted
+2018-09-20 16:33:18 Request id: 5ba3f7062fd81c9772dacbc0
+2018-09-20 16:33:18 Request is queued
+Calling 'nice mars /tmp/9a/c2/tmp-_marsXPP3hH.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.193744 - Welcome to MARS
+mars - INFO   - 20180920.193744 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.193744 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.193744 - EMOSLIB version: 4.5.5
+2018-09-20 16:33:20 Request is active
+mars - INFO   - 20180920.193744 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.193744 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.193744 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20180607/20180614/20180621/20180628,type=cf,class=s2,expect=anymars - INFO   - 20180920.193744 - Automatic split by date is on
+
+mars - INFO   - 20180920.193744 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20180607/20180614/20180621/20180628
+
+mars - INFO   - 20180920.193744 - Web API request id: 5ba3f7062fd81c9772dacbc0
+mars - INFO   - 20180920.193744 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.193744 - Calling mars on 'marsth', callback on 34325
+mars - INFO   - 20180920.193745 - Server task is 696 [marsth]
+mars - INFO   - 20180920.193745 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.193746 - Transfering 214518240 bytes
+mars - INFO   - 20180920.193807 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.193807 - Visiting database marsth : expected 0, got 3680grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_06.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_06.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_07.grib'.
+grib_to_netcdf: Found 36800 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+mars - INFO   - 20180920.193807 - 3680 fields have been interpolated
+mars - INFO   - 20180920.193807 - Request time:  wall: 22 sec  cpu: 20 sec
+mars - INFO   - 20180920.193807 -   Read from network: 204.58 Mbyte(s) in < 1 sec [327.64 Mbyte/sec]
+mars - INFO   - 20180920.193807 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.193807 -   Visiting marsth: wall: 22 sec
+mars - INFO   - 20180920.193807 -   Post-processing: wall: 12 sec cpu: 12 sec
+mars - INFO   - 20180920.193807 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [191.93 Mbyte/sec]
+mars - INFO   - 20180920.193807 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.193807 - No errors reported
+Process '['nice', 'mars', '/tmp/9a/c2/tmp-_marsXPP3hH.req']' finished
+2018-09-20 16:33:44 Request is complete
+2018-09-20 16:33:44 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_06.grib
+2018-09-20 16:33:44 From https://stream.ecmwf.int/data/atls04/data/data03/scratch/a6/95/_mars-atls04-98f536083ae965b31b0d04811be6f4c6-AFZntd.grib
+2018-09-20 16:33:57 Transfer rate 1.26102 Mbytes/s
+2018-09-20 16:34:17 ECMWF API python library 1.5.0
+2018-09-20 16:34:17 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:34:18 Welcome Mariano Alvarez
+2018-09-20 16:34:19 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:34:19 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:34:22 Request submitted
+2018-09-20 16:34:22 Request id: 5ba3f746cad5199722031349
+2018-09-20 16:34:22 Request is queued
+Calling 'nice mars /tmp/c7/b9/tmp-_marseoKZtW.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.193853 - Welcome to MARS
+mars - INFO   - 20180920.193853 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.193853 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.193853 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.193853 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.193853 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.193853 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20180705/20180712/20180719/20180726,type=pf,class=s2,expect=anymars - INFO   - 20180920.193853 - Automatic split by date is on
+
+mars - INFO   - 20180920.193853 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20180705/20180712/20180719/20180726
+
+mars - INFO   - 20180920.193853 - Web API request id: 5ba3f746cad5199722031349
+mars - INFO   - 20180920.193853 - Requesting any number of fields (request describes 9200)
+mars - INFO   - 20180920.193853 - Calling mars on 'marsth', callback on 48339
+mars - INFO   - 20180920.193854 - Server task is 906 [marsth]
+mars - INFO   - 20180920.193854 - Request cost: 36,800 fields, 1.99786 Gbytes online, nodes: mvr01 [marsth]
+2018-09-20 16:34:30 Request is active
+mars - INFO   - 20180920.193855 - Transfering 2145182400 bytes
+mars - INFO   - 20180920.194251 - 36800 fields retrieved from 'marsth'
+mars - WARN   - 20180920.194251 - Visiting database marsth : expected 0, got 36800
+mars - INFO   - 20180920.194251 - 36800 fields have been interpolated
+mars - INFO   - 20180920.194251 - Request time:  wall: 3 min 58 sec  cpu: 3 min 49 sec
+mars - INFO   - 20180920.194251 -   Read from network: 2.00 Gbyte(s) in 5 sec  [391.66 Mbyte/sec]
+mars - INFO   - 20180920.194251 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.194251 -   Visiting marsth: wall: 3 min 58 sec
+mars - INFO   - 20180920.194251 -   Post-processing: wall: 2 min 19 sec cpu: 2 min 18 sec
+mars - INFO   - 20180920.194251 -   Writing to target file: 165.75 Mbyte(s) in 3 sec  [49.58 Mbyte/sec] cpu: 1 sec
+mars - INFO   - 20180920.194251 - Memory used: 44.32 Mbyte(s)
+mars - INFO   - 20180920.194251 - No errors reported
+Process '['nice', 'mars', '/tmp/c7/b9/tmp-_marseoKZtW.req']' finished
+2018-09-20 16:38:43 Request is complete
+2018-09-20 16:38:43 Transfering 165.755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_07.grib
+2018-09-20 16:38:43 From https://stream.ecmwf.int/data/atls13/data/data01/scratch/eb/6c/_mars-atls13-95e2cf679cd58ee9b4db4dd119a05a8d-2RH60m.grib
+2018-09-20 16:40:06 Transfer rate 1.98784 Mbytes/s
+2018-09-20 16:43:18 ECMWF API python library 1.5.0
+2018-09-20 16:43:18 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:43:19 Welcome Mariano Alvarez
+2018-09-20 16:43:20 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:43:20 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:43:21 Request submitted
+2018-09-20 16:43:21 Request id: 5ba3f961c7db1ca822d99a15
+2018-09-20 16:43:21 Request is queued
+2018-09-20 16:43:23 Request is active
+Calling 'nice mars /tmp/ff/93/tmp-_marsi0v4nB.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.194748 - Welcome to MARS
+mars - INFO   - 20180920.194748 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.194748 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.194748 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.194748 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.194748 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.194748 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20180705/20180712/20180719/20180726,type=cf,class=s2,expect=anymars - INFO   - 20180920.194748 - Automatic split by date is on
+
+mars - INFO   - 20180920.194748 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,grib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_07.grib'.
+grib_to_netcdf: Found 3680 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_07.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+grib_to_netcdf.c at line 1056: assertion failure Assert(g->handle)
+Aborted (core dumped)
+
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20180705/20180712/20180719/20180726
+
+mars - INFO   - 20180920.194748 - Web API request id: 5ba3f961c7db1ca822d99a15
+mars - INFO   - 20180920.194748 - Requesting any number of fields (request describes 184)
+mars - INFO   - 20180920.194748 - Calling mars on 'marsth', callback on 52617
+mars - INFO   - 20180920.194749 - Server task is 308 [marsth]
+mars - INFO   - 20180920.194749 - Request cost: 3,680 fields, 204.581 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.194751 - Transfering 214518240 bytes
+mars - INFO   - 20180920.194816 - 3680 fields retrieved from 'marsth'
+mars - WARN   - 20180920.194816 - Visiting database marsth : expected 0, got 3680
+mars - INFO   - 20180920.194816 - 3680 fields have been interpolated
+mars - INFO   - 20180920.194816 - Request time:  wall: 28 sec  cpu: 22 sec
+mars - INFO   - 20180920.194816 -   Read from network: 204.58 Mbyte(s) in 4 sec  [54.44 Mbyte/sec]
+mars - INFO   - 20180920.194816 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.194816 -   Visiting marsth: wall: 28 sec
+mars - INFO   - 20180920.194816 -   Post-processing: wall: 13 sec cpu: 13 sec
+mars - INFO   - 20180920.194816 -   Writing to target file: 16.58 Mbyte(s) in < 1 sec [133.37 Mbyte/sec]
+mars - INFO   - 20180920.194816 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.194816 - No errors reported
+Process '['nice', 'mars', '/tmp/ff/93/tmp-_marsi0v4nB.req']' finished
+2018-09-20 16:43:55 Request is complete
+2018-09-20 16:43:55 Transfering 16.5755 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_07.grib
+2018-09-20 16:43:55 From https://stream.ecmwf.int/data/atls13/data/data01/scratch/8e/cd/_mars-atls13-95e2cf679cd58ee9b4db4dd119a05a8d-qtrbai.grib
+2018-09-20 16:44:08 Transfer rate 1.33487 Mbytes/s
+2018-09-20 16:44:28 ECMWF API python library 1.5.0
+2018-09-20 16:44:28 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:44:29 Welcome Mariano Alvarez
+2018-09-20 16:44:30 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:44:30 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:44:32 Request submitted
+2018-09-20 16:44:32 Request id: 5ba3f9a82fd81c975bdacb64
+2018-09-20 16:44:32 Request is queued
+Calling 'nice mars /tmp/50/13/tmp-_marsxLW5zO.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.194901 - Welcome to MARS
+mars - INFO   - 20180920.194901 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.194901 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.194901 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.194901 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.194901 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.194901 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/50,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20180802/20180809/20180816/20180823/20180830,type=pf,class=s2,expect=anymars - INFO   - 20180920.194901 - Automatic split by date is on
+
+mars - INFO   - 20180920.194901 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    DATE       = 20180802/20180809/20180816/20180823/20180830
+
+mars - INFO   - 20180920.194901 - Web API request id: 5ba3f9a82fd81c975bdacb64
+mars - INFO   - 20180920.194901 - Requesting any number of fields (request describes 11500)
+mars - INFO   - 20180920.194901 - Calling mars on 'marsth', callback on 40680
+mars - INFO   - 20180920.194902 - Server task is 308 [marsth]
+mars - INFO   - 20180920.194902 - Request cost: 46,000 fields, 2.49732 Gbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.194904 - Transfering 2681478000 bytes
+2018-09-20 16:44:40 Request is active
+mars - INFO   - 20180920.195348 - 46000 fields retrieved from 'marsth'
+mars - WARN   - 20180920.195348 - Visiting database marsth : expected 0, got 46000
+mars - INFO   - 20180920.195348 - 46000 fields have been interpolated
+mars - INFO   - 20180920.195348 - Request time:  wall: 4 min 47 sec  cpu: 4 min 43 sec
+mars - INFO   - 20180920.195348 -   Read from network: 2.50 Gbyte(s) in 3 sec  [937.03 Mbyte/sec]
+mars - INFO   - 20180920.195348 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.195348 -   Visiting marsth: wall: 4 min 47 sec
+mars - INFO   - 20180920.195348 -   Post-processing: wall: 2 min 52 sec cpu: 2 min 51 sec
+mars - INFO   - 20180920.195348 -   Writing to target file: 207.19 Mbyte(s) in 2 sec  [95.68 Mbyte/sec] cpu: 2 sec
+mars - INFO   - 20180920.195348 - Memory used: 44.34 Mbyte(s)
+mars - INFO   - 20180920.195348 - No errors reported
+Process '['nice', 'mars', '/tmp/50/13/tmp-_marsxLW5zO.req']' finished
+2018-09-20 16:49:28 Request is complete
+2018-09-20 16:49:28 Transfering 207.193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_pf_realtimefcst_2018_08.grib
+2018-09-20 16:49:28 From https://stream.ecmwf.int/data/atls04/data/data02/scratch/72/d2/_mars-atls04-a82bacafb5c306db76464bc7e824bb75-DP1qZS.grib
+2018-09-20 16:51:33 Transfer rate 1.65001 Mbytes/s
+2018-09-20 16:54:52 ECMWF API python library 1.5.0
+2018-09-20 16:54:52 ECMWF API at https://api.ecmwf.int/v1
+2018-09-20 16:54:53 Welcome Mariano Alvarez
+2018-09-20 16:54:55 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-09-20 16:54:55 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-09-20 16:54:56 Request submitted
+2018-09-20 16:54:56 Request id: 5ba3fc182fd81c975bdacb67
+2018-09-20 16:54:56 Request is queued
+Calling 'nice mars /tmp/fa/b0/tmp-_marshXsFWm.req'
+2018-09-20 16:54:58 Request is active
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180920.195922 - Welcome to MARS
+mars - INFO   - 20180920.195922 - MARS Client build stamp: 20180831152708
+mars - INFO   - 20180920.195922 - MARS Client version: 6.22.4
+mars - INFO   - 20180920.195922 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180920.195922 - Using ecCodes version 2.8.2
+mars - INFO   - 20180920.195922 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180920.195922 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=167,time=00,date=20180802/20180809/20180816/20180823/20180830,type=cf,class=s2,expect=anymars - INFO   - 20180920.195922 - Automatic split by date is ongrib_to_netcdf: Version 1.14.3
+grib_to_netcdf: Processing input file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_08.grib'.
+grib_to_netcdf: Found 4600 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate
+grib_to_netcdf: Creating netcdf file '/media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_08.nc'
+grib_to_netcdf: NetCDF library version: 4.3.3.1 of Jan 25 2017 15:13:21 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 't2m'.
+grib_to_netcdf: Done.
+
+
+mars - INFO   - 20180920.195922 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    EXPECT     = ANY,
+    NUMBER     = 0,
+    DATE       = 20180802/20180809/20180816/20180823/20180830
+
+mars - INFO   - 20180920.195922 - Web API request id: 5ba3fc182fd81c975bdacb67
+mars - INFO   - 20180920.195922 - Requesting any number of fields (request describes 230)
+mars - INFO   - 20180920.195922 - Calling mars on 'marsth', callback on 51480
+mars - INFO   - 20180920.195923 - Server task is 906 [marsth]
+mars - INFO   - 20180920.195923 - Request cost: 4,600 fields, 255.726 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180920.195925 - Transfering 268147800 bytes
+mars - INFO   - 20180920.195952 - 4600 fields retrieved from 'marsth'
+mars - WARN   - 20180920.195952 - Visiting database marsth : expected 0, got 4600
+mars - INFO   - 20180920.195952 - 4600 fields have been interpolated
+mars - INFO   - 20180920.195952 - Request time:  wall: 30 sec  cpu: 26 sec
+mars - INFO   - 20180920.195952 -   Read from network: 255.73 Mbyte(s) in 2 sec  [167.68 Mbyte/sec]
+mars - INFO   - 20180920.195952 -   Processing in marsth: wall: 2 sec
+mars - INFO   - 20180920.195952 -   Visiting marsth: wall: 30 sec
+mars - INFO   - 20180920.195952 -   Post-processing: wall: 16 sec cpu: 16 sec
+mars - INFO   - 20180920.195952 -   Writing to target file: 20.72 Mbyte(s) in < 1 sec [193.00 Mbyte/sec]
+mars - INFO   - 20180920.195952 - Memory used: 44.33 Mbyte(s)
+mars - INFO   - 20180920.195952 - No errors reported
+Process '['nice', 'mars', '/tmp/fa/b0/tmp-_marshXsFWm.req']' finished
+2018-09-20 16:55:29 Request is complete
+2018-09-20 16:55:29 Transfering 20.7193 Mbytes into /media/mariano/371BA83C4BFB071E/S2S_data/ECMWF/ECMWF_2t_SAm_cf_realtimefcst_2018_08.grib
+2018-09-20 16:55:29 From https://stream.ecmwf.int/data/atls13/data/data01/scratch/88/b0/_mars-atls13-95e2cf679cd58ee9b4db4dd119a05a8d-JvQeaQ.grib
+2018-09-20 16:55:46 Transfer rate 1.27067 Mbytes/s

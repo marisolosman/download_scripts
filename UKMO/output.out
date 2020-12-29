@@ -1,0 +1,963 @@
+2020-09-14 17:54:40 ECMWF API python library 1.5.4
+2020-09-14 17:54:40 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 17:54:45 Welcome Marisol Osman
+2020-09-14 17:54:46 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 17:54:47 Request submitted
+2020-09-14 17:54:47 Request id: 5f5fd897c5bd6638feb4f62b
+2020-09-14 17:54:47 Request is submitted
+2020-09-14 17:54:50 Request is active
+Calling 'nice mars /tmp/20200914-2050/8a/tmp-_marsD9dtfF.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.205448 - Welcome to MARS
+mars - INFO   - 20200914.205448 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.205448 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.205448 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.205448 - MIR version: 1.4.7
+mars - INFO   - 20200914.205448 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.205448 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.205448 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.205448 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-10-09,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-10-09,type=pf,class=s2mars - INFO   - 20200914.205448 - Automatic split by date is on
+
+mars - INFO   - 20200914.205448 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-10-09,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191009
+
+mars - INFO   - 20200914.205448 - Web API request id: 5f5fd897c5bd6638feb4f62b
+mars - INFO   - 20200914.205448 - Requesting 3294 fields
+mars - INFO   - 20200914.205448 - Calling mars on 'marsth', local port is 55121
+mars - INFO   - 20200914.205448 - Server task is 236 [marsth]
+mars - INFO   - 20200914.205448 - Request cost: 3,294 fields, 281.152 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20200914.205449 - Transfering 294809706 bytes
+mars - INFO   - 20200914.205512 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200914.205512 - 3294 fields have been interpolated
+mars - INFO   - 20200914.205512 - Request time:  wall: 24 sec  cpu: 22 sec
+mars - INFO   - 20200914.205512 -   Read from network: 281.15 Mbyte(s) in < 1 sec [412.76 Mbyte/sec]
+mars - INFO   - 20200914.205512 -   Processing in marsth: wall: 1 sec
+mars - INFO   - 20200914.205512 -   Visiting marsth: wall: 24 sec
+mars - INFO   - 20200914.205512 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200914.205512 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [378.86 Mbyte/sec]
+mars - INFO   - 20200914.205512 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200914.205512 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2050/8a/tmp-_marsD9dtfF.req']' finished
+2020-09-14 17:55:15 Request is complete
+2020-09-14 17:55:15 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_10_09.grib
+2020-09-14 17:55:15 From https://stream.ecmwf.int/data/webmars-private-svc-green-007/data/scratch/20200914-2050/88/_mars-webmars-private-svc-green-007-6fe5cac1a363ec1525f54343b6cc9fd8-oBx0Y6.grib
+2020-09-14 17:56:38 Transfer rate 1.71863 Mbytes/s
+2020-09-14 17:56:39 ECMWF API python library 1.5.4
+2020-09-14 17:56:39 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 17:56:40 Welcome Marisol Osman
+2020-09-14 17:56:41 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 17:56:43 Request submitted
+2020-09-14 17:56:43 Request id: 5f5fd90a46b53d487e91dd0a
+2020-09-14 17:56:43 Request is submitted
+2020-09-14 17:56:45 Request is active
+Calling 'nice mars /tmp/20200914-2050/db/tmp-_marsZtTNKJ.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.205644 - Welcome to MARS
+mars - INFO   - 20200914.205644 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.205644 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.205644 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.205644 - MIR version: 1.4.7
+mars - INFO   - 20200914.205644 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.205644 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.205644 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.205644 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-10-09,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-10-09,type=cf,class=s2mars - INFO   - 20200914.205644 - Automatic split by date is on
+
+mars - INFO   - 20200914.205644 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-10-09,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191009
+
+mars - INFO   - 20200914.205644 - Web API request id: 5f5fd90a46b53d487e91dd0a
+mars - INFO   - 20200914.205644 - Requesting 549 fields
+mars - INFO   - 20200914.205644 - Calling mars on 'marsth', local port is 33574
+mars - INFO   - 20200914.211603 - Server task is 540 [marsth]
+mars - INFO   - 20200914.211603 - Request cost: 549 fields, 36.0189 Mbytes online, 10.8398 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200914.212752 - Transfering 49134951 bytes
+mars - INFO   - 20200914.212757 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200914.212757 - 549 fields have been interpolated
+mars - INFO   - 20200914.212757 - Request time:  wall: 31 min 13 sec  cpu: 4 sec
+mars - INFO   - 20200914.212757 -   Read from network: 46.86 Mbyte(s) in < 1 sec [120.61 Mbyte/sec]
+mars - INFO   - 20200914.212757 -   Processing in marsth: wall: 31 min 8 sec
+mars - INFO   - 20200914.212757 -   Visiting marsth: wall: 31 min 13 sec
+mars - INFO   - 20200914.212757 -   Post-processing: wall: 3 sec cpu: 3 sec
+mars - INFO   - 20200914.212757 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [128.21 Mbyte/sec]
+mars - INFO   - 20200914.212757 - Memory used: 43.96 Mbyte(s)
+mars - INFO   - 20200914.212757 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2050/db/tmp-_marsZtTNKJ.req']' finished
+2020-09-14 18:29:14 Request is complete
+2020-09-14 18:29:14 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_10_09.grib
+2020-09-14 18:29:14 From https://stream.ecmwf.int/data/webmars-private-svc-green-011/data/scratch/20200914-2050/3a/_mars-webmars-private-svc-green-011-6fe5cac1a363ec1525f54343b6cc9fd8-kiNQEc.grib
+2020-09-14 18:29:29 Transfer rate 1.51837 Mbytes/s
+2020-09-14 18:29:31 ECMWF API python library 1.5.4
+2020-09-14 18:29:31 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 18:29:32 Welcome Marisol Osman
+2020-09-14 18:29:33 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 18:29:34 Request submitted
+2020-09-14 18:29:34 Request id: 5f5fe0beab2228effab4f633
+2020-09-14 18:29:34 Request is submitted
+2020-09-14 18:29:36 Request is active
+Calling 'nice mars /tmp/20200914-2120/ef/tmp-_marsk6afth.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.212935 - Welcome to MARS
+mars - INFO   - 20200914.212935 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.212935 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.212935 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.212935 - MIR version: 1.4.7
+mars - INFO   - 20200914.212935 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.212935 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.212935 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.212935 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-10-17,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-10-17,type=pf,class=s2mars - INFO   - 20200914.212935 - Automatic split by date is on
+
+mars - INFO   - 20200914.212935 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-10-17,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191017
+
+mars - INFO   - 20200914.212935 - Web API request id: 5f5fe0beab2228effab4f633
+mars - INFO   - 20200914.212935 - Requesting 3294 fields
+mars - INFO   - 20200914.212935 - Calling mars on 'marsth', local port is 50437
+mars - INFO   - 20200914.214356 - Server task is 989 [marsth]
+mars - INFO   - 20200914.214356 - Request cost: 3,294 fields, 216.114 Mbytes online, 65.0389 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200914.220050 - Transfering 294809706 bytes
+mars - INFO   - 20200914.220113 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200914.220113 - 3294 fields have been interpolated
+mars - INFO   - 20200914.220113 - Request time:  wall: 31 min 38 sec  cpu: 22 sec
+mars - INFO   - 20200914.220113 -   Read from network: 281.15 Mbyte(s) in < 1 sec [425.32 Mbyte/sec]
+mars - INFO   - 20200914.220113 -   Processing in marsth: wall: 31 min 15 sec
+mars - INFO   - 20200914.220113 -   Visiting marsth: wall: 31 min 38 sec
+mars - INFO   - 20200914.220113 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200914.220113 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [429.22 Mbyte/sec]
+mars - INFO   - 20200914.220113 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200914.220113 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2120/ef/tmp-_marsk6afth.req']' finished
+2020-09-14 19:02:02 Request is complete
+2020-09-14 19:02:02 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_10_17.grib
+2020-09-14 19:02:02 From https://stream.ecmwf.int/data/webmars-private-svc-green-000/data/scratch/20200914-2120/84/_mars-webmars-private-svc-green-000-6fe5cac1a363ec1525f54343b6cc9fd8-8xU8wH.grib
+2020-09-14 19:03:25 Transfer rate 1.70039 Mbytes/s
+2020-09-14 19:03:27 ECMWF API python library 1.5.4
+2020-09-14 19:03:27 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 19:03:28 Welcome Marisol Osman
+2020-09-14 19:03:29 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 19:03:30 Request submitted
+2020-09-14 19:03:30 Request id: 5f5fe8b257c8c37b9391dd0d
+2020-09-14 19:03:30 Request is submitted
+2020-09-14 19:03:32 Request is active
+Calling 'nice mars /tmp/20200914-2200/b4/tmp-_marsJ_BSCv.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.220331 - Welcome to MARS
+mars - INFO   - 20200914.220331 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.220331 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.220331 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.220331 - MIR version: 1.4.7
+mars - INFO   - 20200914.220331 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.220331 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.220331 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.220331 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-10-17,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-10-17,type=cf,class=s2mars - INFO   - 20200914.220331 - Automatic split by date is on
+
+mars - INFO   - 20200914.220331 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-10-17,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191017
+
+mars - INFO   - 20200914.220331 - Web API request id: 5f5fe8b257c8c37b9391dd0d
+mars - INFO   - 20200914.220331 - Requesting 549 fields
+mars - INFO   - 20200914.220331 - Calling mars on 'marsth', local port is 35807
+mars - INFO   - 20200914.222311 - Server task is 157 [marsth]
+mars - INFO   - 20200914.222311 - Request cost: 549 fields, 36.0189 Mbytes online, 10.8398 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200914.223513 - Transfering 49134951 bytes
+mars - INFO   - 20200914.223518 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200914.223518 - 549 fields have been interpolated
+mars - INFO   - 20200914.223518 - Request time:  wall: 31 min 47 sec  cpu: 4 sec
+mars - INFO   - 20200914.223518 -   Read from network: 46.86 Mbyte(s) in < 1 sec [125.56 Mbyte/sec]
+mars - INFO   - 20200914.223518 -   Processing in marsth: wall: 31 min 42 sec
+mars - INFO   - 20200914.223518 -   Visiting marsth: wall: 31 min 47 sec
+mars - INFO   - 20200914.223518 -   Post-processing: wall: 3 sec cpu: 3 sec
+mars - INFO   - 20200914.223518 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [174.43 Mbyte/sec]
+mars - INFO   - 20200914.223518 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200914.223518 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2200/b4/tmp-_marsJ_BSCv.req']' finished
+2020-09-14 19:35:58 Request is complete
+2020-09-14 19:35:58 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_10_17.grib
+2020-09-14 19:35:58 From https://stream.ecmwf.int/data/webmars-private-svc-green-003/data/scratch/20200914-2200/0a/_mars-webmars-private-svc-green-003-6fe5cac1a363ec1525f54343b6cc9fd8-Pr4kcv.grib
+2020-09-14 19:36:14 Transfer rate 1.44244 Mbytes/s
+2020-09-14 19:36:15 ECMWF API python library 1.5.4
+2020-09-14 19:36:15 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 19:36:17 Welcome Marisol Osman
+2020-09-14 19:36:18 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 19:36:19 Request submitted
+2020-09-14 19:36:19 Request id: 5f5ff06371a17076d291dd0c
+2020-09-14 19:36:19 Request is submitted
+2020-09-14 19:36:21 Request is active
+Calling 'nice mars /tmp/20200914-2230/d8/tmp-_mars4W7xfY.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.223620 - Welcome to MARS
+mars - INFO   - 20200914.223620 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.223620 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.223620 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.223620 - MIR version: 1.4.7
+mars - INFO   - 20200914.223620 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.223620 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.223620 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.223620 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-10-25,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-10-25,type=pf,class=s2mars - INFO   - 20200914.223620 - Automatic split by date is on
+
+mars - INFO   - 20200914.223620 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-10-25,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191025
+
+mars - INFO   - 20200914.223620 - Web API request id: 5f5ff06371a17076d291dd0c
+mars - INFO   - 20200914.223620 - Requesting 3294 fields
+mars - INFO   - 20200914.223620 - Calling mars on 'marsth', local port is 41243
+mars - INFO   - 20200914.230158 - Server task is 425 [marsth]
+mars - INFO   - 20200914.230158 - Request cost: 3,294 fields, 279.616 Mbytes online, 1.53635 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200914.230547 - Transfering 294809706 bytes
+mars - INFO   - 20200914.230609 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200914.230609 - 3294 fields have been interpolated
+mars - INFO   - 20200914.230610 - Request time:  wall: 29 min 50 sec  cpu: 21 sec
+mars - INFO   - 20200914.230610 -   Read from network: 281.15 Mbyte(s) in 1 sec  [193.28 Mbyte/sec]
+mars - INFO   - 20200914.230610 -   Processing in marsth: wall: 29 min 26 sec
+mars - INFO   - 20200914.230610 -   Visiting marsth: wall: 29 min 49 sec
+mars - INFO   - 20200914.230610 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200914.230610 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [185.84 Mbyte/sec]
+mars - INFO   - 20200914.230610 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200914.230610 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2230/d8/tmp-_mars4W7xfY.req']' finished
+2020-09-14 20:06:50 Request is complete
+2020-09-14 20:06:50 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_10_25.grib
+2020-09-14 20:06:50 From https://stream.ecmwf.int/data/webmars-private-svc-green-003/data/scratch/20200914-2230/3c/_mars-webmars-private-svc-green-003-6fe5cac1a363ec1525f54343b6cc9fd8-MAVZcO.grib
+2020-09-14 20:08:13 Transfer rate 1.72209 Mbytes/s
+2020-09-14 20:08:14 ECMWF API python library 1.5.4
+2020-09-14 20:08:14 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 20:08:16 Welcome Marisol Osman
+2020-09-14 20:08:17 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 20:08:18 Request submitted
+2020-09-14 20:08:18 Request id: 5f5ff7e2046f2c5222f633ab
+2020-09-14 20:08:18 Request is submitted
+2020-09-14 20:08:20 Request is active
+Calling 'nice mars /tmp/20200914-2300/f6/tmp-_marsFT_zGx.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.230818 - Welcome to MARS
+mars - INFO   - 20200914.230818 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.230818 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.230818 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.230818 - MIR version: 1.4.7
+mars - INFO   - 20200914.230818 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.230818 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.230818 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.230818 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-10-25,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-10-25,type=cf,class=s2mars - INFO   - 20200914.230818 - Automatic split by date is on
+
+mars - INFO   - 20200914.230818 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-10-25,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191025
+
+mars - INFO   - 20200914.230818 - Web API request id: 5f5ff7e2046f2c5222f633ab
+mars - INFO   - 20200914.230818 - Requesting 549 fields
+mars - INFO   - 20200914.230818 - Calling mars on 'marsth', local port is 37747
+mars - INFO   - 20200914.232303 - Server task is 543 [marsth]
+mars - INFO   - 20200914.232303 - Request cost: 549 fields, 46.6027 Mbytes online, 262.204 Kbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200914.232748 - Transfering 49134951 bytes
+mars - INFO   - 20200914.232753 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200914.232753 - 549 fields have been interpolated
+mars - INFO   - 20200914.232753 - Request time:  wall: 19 min 35 sec  cpu: 4 sec
+mars - INFO   - 20200914.232753 -   Read from network: 46.86 Mbyte(s) in < 1 sec [59.28 Mbyte/sec]
+mars - INFO   - 20200914.232753 -   Processing in marsth: wall: 19 min 30 sec
+mars - INFO   - 20200914.232753 -   Visiting marsth: wall: 19 min 35 sec
+mars - INFO   - 20200914.232753 -   Post-processing: wall: 3 sec cpu: 3 sec
+mars - INFO   - 20200914.232753 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [171.94 Mbyte/sec]
+mars - INFO   - 20200914.232753 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200914.232753 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2300/f6/tmp-_marsFT_zGx.req']' finished
+2020-09-14 20:28:37 Request is complete
+2020-09-14 20:28:37 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_10_25.grib
+2020-09-14 20:28:37 From https://stream.ecmwf.int/data/webmars-private-svc-green-011/data/scratch/20200914-2300/11/_mars-webmars-private-svc-green-011-6fe5cac1a363ec1525f54343b6cc9fd8-4tFOg7.grib
+2020-09-14 20:28:52 Transfer rate 1.56831 Mbytes/s
+2020-09-14 20:28:53 ECMWF API python library 1.5.4
+2020-09-14 20:28:53 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 20:28:55 Welcome Marisol Osman
+2020-09-14 20:28:56 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 20:28:57 Request submitted
+2020-09-14 20:28:57 Request id: 5f5ffcb956fbcf1ce8b4f62c
+2020-09-14 20:28:57 Request is submitted
+2020-09-14 20:28:59 Request is active
+Calling 'nice mars /tmp/20200914-2320/db/tmp-_marsuHb_Y0.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200914.232858 - Welcome to MARS
+mars - INFO   - 20200914.232858 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200914.232858 - MARS Client package version: 6.28.6
+mars - INFO   - 20200914.232858 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200914.232858 - MIR version: 1.4.7
+mars - INFO   - 20200914.232858 - Using ecCodes version 2.18.0
+mars - INFO   - 20200914.232858 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200914.232858 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200914.232858 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-01,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-01,type=pf,class=s2mars - INFO   - 20200914.232858 - Automatic split by date is on
+
+mars - INFO   - 20200914.232858 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-01,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191101
+
+mars - INFO   - 20200914.232858 - Web API request id: 5f5ffcb956fbcf1ce8b4f62c
+mars - INFO   - 20200914.232858 - Requesting 3294 fields
+mars - INFO   - 20200914.232858 - Calling mars on 'marsth', local port is 50339
+mars - INFO   - 20200914.234404 - Server task is 314 [marsth]
+mars - INFO   - 20200914.234404 - Request cost: 3,294 fields, 216.114 Mbytes online, 65.0389 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200915.004838 - Transfering 294809706 bytes
+mars - INFO   - 20200915.004901 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200915.004901 - 3294 fields have been interpolated
+mars - INFO   - 20200915.004901 - Request time:  wall: 1 hour 20 min 3 sec  cpu: 22 sec
+mars - INFO   - 20200915.004901 -   Read from network: 281.15 Mbyte(s) in < 1 sec [408.00 Mbyte/sec]
+mars - INFO   - 20200915.004901 -   Processing in marsth: wall: 1 hour 19 min 40 sec
+mars - INFO   - 20200915.004901 -   Visiting marsth: wall: 1 hour 20 min 3 sec
+mars - INFO   - 20200915.004901 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200915.004901 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [343.74 Mbyte/sec]
+mars - INFO   - 20200915.004901 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200915.004901 - No errors reported
+Process '['nice', 'mars', '/tmp/20200914-2320/db/tmp-_marsuHb_Y0.req']' finished
+2020-09-14 21:50:08 Request is complete
+2020-09-14 21:50:08 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_11_01.grib
+2020-09-14 21:50:08 From https://stream.ecmwf.int/data/webmars-private-svc-green-006/data/scratch/20200914-2320/0a/_mars-webmars-private-svc-green-006-6fe5cac1a363ec1525f54343b6cc9fd8-iRiCgC.grib
+2020-09-14 21:51:33 Transfer rate 1.66009 Mbytes/s
+2020-09-14 21:51:34 ECMWF API python library 1.5.4
+2020-09-14 21:51:34 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 21:51:35 Welcome Marisol Osman
+2020-09-14 21:51:36 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 21:51:37 Request submitted
+2020-09-14 21:51:37 Request id: 5f601019d5f606754991dd0b
+2020-09-14 21:51:37 Request is submitted
+2020-09-14 21:51:40 Request is active
+Calling 'nice mars /tmp/20200915-0050/05/tmp-_marsdo_Bat.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.005138 - Welcome to MARS
+mars - INFO   - 20200915.005138 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.005138 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.005138 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.005138 - MIR version: 1.4.7
+mars - INFO   - 20200915.005138 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.005138 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.005138 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.005138 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-01,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-01,type=cf,class=s2mars - INFO   - 20200915.005138 - Automatic split by date is on
+
+mars - INFO   - 20200915.005138 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-01,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191101
+
+mars - INFO   - 20200915.005138 - Web API request id: 5f601019d5f606754991dd0b
+mars - INFO   - 20200915.005138 - Requesting 549 fields
+mars - INFO   - 20200915.005138 - Calling mars on 'marsth', local port is 59999
+mars - INFO   - 20200915.011856 - Server task is 293 [marsth]
+mars - INFO   - 20200915.011856 - Request cost: 549 fields, 36.0189 Mbytes online, 10.8398 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200915.012020 - Transfering 49134951 bytes
+mars - INFO   - 20200915.012025 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200915.012025 - 549 fields have been interpolated
+mars - INFO   - 20200915.012025 - Request time:  wall: 28 min 47 sec  cpu: 4 sec
+mars - INFO   - 20200915.012025 -   Read from network: 46.86 Mbyte(s) in < 1 sec [121.37 Mbyte/sec]
+mars - INFO   - 20200915.012025 -   Processing in marsth: wall: 28 min 42 sec
+mars - INFO   - 20200915.012025 -   Visiting marsth: wall: 28 min 47 sec
+mars - INFO   - 20200915.012025 -   Post-processing: wall: 3 sec cpu: 3 sec
+mars - INFO   - 20200915.012025 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [292.19 Mbyte/sec]
+mars - INFO   - 20200915.012025 - Memory used: 43.96 Mbyte(s)
+mars - INFO   - 20200915.012025 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0050/05/tmp-_marsdo_Bat.req']' finished
+2020-09-14 22:21:45 Request is complete
+2020-09-14 22:21:45 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_11_01.grib
+2020-09-14 22:21:45 From https://stream.ecmwf.int/data/webmars-private-svc-green-006/data/scratch/20200915-0050/dc/_mars-webmars-private-svc-green-006-6fe5cac1a363ec1525f54343b6cc9fd8-eAGVsu.grib
+2020-09-14 22:22:01 Transfer rate 1.46308 Mbytes/s
+2020-09-14 22:22:02 ECMWF API python library 1.5.4
+2020-09-14 22:22:02 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 22:22:03 Welcome Marisol Osman
+2020-09-14 22:22:04 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 22:22:05 Request submitted
+2020-09-14 22:22:05 Request id: 5f60173dc87e7a3e72f633b0
+2020-09-14 22:22:05 Request is submitted
+2020-09-14 22:22:07 Request is active
+Calling 'nice mars /tmp/20200915-0120/fa/tmp-_marscTmBoR.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.012206 - Welcome to MARS
+mars - INFO   - 20200915.012206 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.012206 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.012206 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.012206 - MIR version: 1.4.7
+mars - INFO   - 20200915.012206 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.012206 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.012206 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.012206 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-09,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-09,type=pf,class=s2mars - INFO   - 20200915.012206 - Automatic split by date is on
+
+mars - INFO   - 20200915.012206 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-09,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191109
+
+mars - INFO   - 20200915.012206 - Web API request id: 5f60173dc87e7a3e72f633b0
+mars - INFO   - 20200915.012206 - Requesting 3294 fields
+mars - INFO   - 20200915.012206 - Calling mars on 'marsth', local port is 42905
+mars - INFO   - 20200915.014504 - Server task is 488 [marsth]
+mars - INFO   - 20200915.014504 - Request cost: 3,294 fields, 279.616 Mbytes online, 1.53635 Mbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200915.021728 - Transfering 294809706 bytes
+mars - INFO   - 20200915.021751 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200915.021751 - 3294 fields have been interpolated
+mars - INFO   - 20200915.021752 - Request time:  wall: 55 min 46 sec  cpu: 22 sec
+mars - INFO   - 20200915.021752 -   Read from network: 281.15 Mbyte(s) in 1 sec  [197.52 Mbyte/sec]
+mars - INFO   - 20200915.021752 -   Processing in marsth: wall: 55 min 22 sec
+mars - INFO   - 20200915.021752 -   Visiting marsth: wall: 55 min 46 sec
+mars - INFO   - 20200915.021752 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200915.021752 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [360.53 Mbyte/sec]
+mars - INFO   - 20200915.021752 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200915.021752 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0120/fa/tmp-_marscTmBoR.req']' finished
+2020-09-14 23:18:49 Request is complete
+2020-09-14 23:18:49 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_11_09.grib
+2020-09-14 23:18:49 From https://stream.ecmwf.int/data/webmars-private-svc-green-001/data/scratch/20200915-0120/83/_mars-webmars-private-svc-green-001-6fe5cac1a363ec1525f54343b6cc9fd8-ayBQ5g.grib
+2020-09-14 23:20:10 Transfer rate 1.75248 Mbytes/s
+2020-09-14 23:20:11 ECMWF API python library 1.5.4
+2020-09-14 23:20:11 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 23:20:12 Welcome Marisol Osman
+2020-09-14 23:20:13 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 23:20:14 Request submitted
+2020-09-14 23:20:14 Request id: 5f6024deb1ecb3e74bf633ae
+2020-09-14 23:20:14 Request is submitted
+2020-09-14 23:20:16 Request is active
+Calling 'nice mars /tmp/20200915-0220/7c/tmp-_marslJGJHZ.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.022015 - Welcome to MARS
+mars - INFO   - 20200915.022015 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.022015 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.022015 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.022015 - MIR version: 1.4.7
+mars - INFO   - 20200915.022015 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.022015 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.022015 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.022015 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-09,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-09,type=cf,class=s2mars - INFO   - 20200915.022015 - Automatic split by date is on
+
+mars - INFO   - 20200915.022015 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-09,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191109
+
+mars - INFO   - 20200915.022015 - Web API request id: 5f6024deb1ecb3e74bf633ae
+mars - INFO   - 20200915.022015 - Requesting 549 fields
+mars - INFO   - 20200915.022015 - Calling mars on 'marsth', local port is 33399
+mars - INFO   - 20200915.023811 - Server task is 767 [marsth]
+mars - INFO   - 20200915.023811 - Request cost: 549 fields, 46.6027 Mbytes online, 262.204 Kbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200915.025018 - Transfering 49134951 bytes
+mars - INFO   - 20200915.025022 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200915.025022 - 549 fields have been interpolated
+mars - INFO   - 20200915.025022 - Request time:  wall: 30 min 7 sec  cpu: 3 sec
+mars - INFO   - 20200915.025022 -   Read from network: 46.86 Mbyte(s) in < 1 sec [55.73 Mbyte/sec]
+mars - INFO   - 20200915.025022 -   Processing in marsth: wall: 30 min 3 sec
+mars - INFO   - 20200915.025022 -   Visiting marsth: wall: 30 min 7 sec
+mars - INFO   - 20200915.025022 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20200915.025022 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [207.03 Mbyte/sec]
+mars - INFO   - 20200915.025022 - Memory used: 43.96 Mbyte(s)
+mars - INFO   - 20200915.025022 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0220/7c/tmp-_marslJGJHZ.req']' finished
+2020-09-14 23:50:40 Request is complete
+2020-09-14 23:50:40 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_11_09.grib
+2020-09-14 23:50:40 From https://stream.ecmwf.int/data/webmars-private-svc-green-005/data/scratch/20200915-0220/dd/_mars-webmars-private-svc-green-005-6fe5cac1a363ec1525f54343b6cc9fd8-cXtIBL.grib
+2020-09-14 23:50:56 Transfer rate 1.52735 Mbytes/s
+2020-09-14 23:50:57 ECMWF API python library 1.5.4
+2020-09-14 23:50:57 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 23:50:58 Welcome Marisol Osman
+2020-09-14 23:50:59 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 23:51:00 Request submitted
+2020-09-14 23:51:00 Request id: 5f602c14d0709fb9e791dd0b
+2020-09-14 23:51:00 Request is submitted
+2020-09-14 23:51:02 Request is active
+Calling 'nice mars /tmp/20200915-0250/a9/tmp-_marsL2hnsa.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.025101 - Welcome to MARS
+mars - INFO   - 20200915.025101 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.025101 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.025101 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.025101 - MIR version: 1.4.7
+mars - INFO   - 20200915.025101 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.025101 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.025101 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.025101 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-17,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-17,type=pf,class=s2mars - INFO   - 20200915.025101 - Automatic split by date is on
+
+mars - INFO   - 20200915.025101 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-17,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191117
+
+mars - INFO   - 20200915.025101 - Web API request id: 5f602c14d0709fb9e791dd0b
+mars - INFO   - 20200915.025102 - Requesting 3294 fields
+mars - INFO   - 20200915.025102 - Calling mars on 'marsth', local port is 58643
+mars - INFO   - 20200915.025102 - Server task is 262 [marsth]
+mars - INFO   - 20200915.025102 - Request cost: 3,294 fields, 281.152 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20200915.025102 - Transfering 294809706 bytes
+mars - INFO   - 20200915.025124 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200915.025124 - 3294 fields have been interpolated
+mars - INFO   - 20200915.025124 - Request time:  wall: 23 sec  cpu: 22 sec
+mars - INFO   - 20200915.025124 -   Read from network: 281.15 Mbyte(s) in < 1 sec [659.55 Mbyte/sec]
+mars - INFO   - 20200915.025124 -   Visiting marsth: wall: 23 sec
+mars - INFO   - 20200915.025124 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200915.025124 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [484.88 Mbyte/sec]
+mars - INFO   - 20200915.025124 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200915.025124 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0250/a9/tmp-_marsL2hnsa.req']' finished
+2020-09-14 23:51:27 Request is complete
+2020-09-14 23:51:27 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_11_17.grib
+2020-09-14 23:51:27 From https://stream.ecmwf.int/data/webmars-private-svc-green-004/data/scratch/20200915-0250/bd/_mars-webmars-private-svc-green-004-6fe5cac1a363ec1525f54343b6cc9fd8-IyUPMP.grib
+2020-09-14 23:52:51 Transfer rate 1.68781 Mbytes/s
+2020-09-14 23:52:52 ECMWF API python library 1.5.4
+2020-09-14 23:52:52 ECMWF API at https://api.ecmwf.int/v1
+2020-09-14 23:52:53 Welcome Marisol Osman
+2020-09-14 23:52:54 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-14 23:52:55 Request submitted
+2020-09-14 23:52:55 Request id: 5f602c879a1a92f52491dd09
+2020-09-14 23:52:55 Request is submitted
+2020-09-14 23:52:58 Request is active
+Calling 'nice mars /tmp/20200915-0250/3c/tmp-_marsAuuzhg.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.025257 - Welcome to MARS
+mars - INFO   - 20200915.025257 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.025257 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.025257 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.025257 - MIR version: 1.4.7
+mars - INFO   - 20200915.025257 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.025257 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.025257 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.025257 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-17,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-17,type=cf,class=s2mars - INFO   - 20200915.025257 - Automatic split by date is on
+
+mars - INFO   - 20200915.025257 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-17,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191117
+
+mars - INFO   - 20200915.025257 - Web API request id: 5f602c879a1a92f52491dd09
+mars - INFO   - 20200915.025257 - Requesting 549 fields
+mars - INFO   - 20200915.025257 - Calling mars on 'marsth', local port is 45737
+mars - INFO   - 20200915.030859 - Server task is 732 [marsth]
+mars - INFO   - 20200915.030859 - Request cost: 549 fields, 46.6027 Mbytes online, 262.204 Kbytes on 1 tape, nodes: hpss mvr01 [marsth]
+mars - INFO   - 20200915.031113 - Transfering 49134951 bytes
+mars - INFO   - 20200915.031117 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200915.031117 - 549 fields have been interpolated
+mars - INFO   - 20200915.031118 - Request time:  wall: 18 min 21 sec  cpu: 3 sec
+mars - INFO   - 20200915.031118 -   Read from network: 46.86 Mbyte(s) in < 1 sec [54.17 Mbyte/sec]
+mars - INFO   - 20200915.031118 -   Processing in marsth: wall: 18 min 17 sec
+mars - INFO   - 20200915.031118 -   Visiting marsth: wall: 18 min 21 sec
+mars - INFO   - 20200915.031118 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20200915.031118 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [208.20 Mbyte/sec]
+mars - INFO   - 20200915.031118 - Memory used: 43.96 Mbyte(s)
+mars - INFO   - 20200915.031118 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0250/3c/tmp-_marsAuuzhg.req']' finished
+2020-09-15 00:12:23 Request is complete
+2020-09-15 00:12:23 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_11_17.grib
+2020-09-15 00:12:23 From https://stream.ecmwf.int/data/webmars-private-svc-green-003/data/scratch/20200915-0250/e4/_mars-webmars-private-svc-green-003-6fe5cac1a363ec1525f54343b6cc9fd8-weBSkG.grib
+2020-09-15 00:12:37 Transfer rate 1.58949 Mbytes/s
+2020-09-15 00:12:39 ECMWF API python library 1.5.4
+2020-09-15 00:12:39 ECMWF API at https://api.ecmwf.int/v1
+2020-09-15 00:12:40 Welcome Marisol Osman
+2020-09-15 00:12:41 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-15 00:12:42 Request submitted
+2020-09-15 00:12:42 Request id: 5f603129cb03d5e70e91dd0e
+2020-09-15 00:12:42 Request is submitted
+2020-09-15 00:12:44 Request is active
+Calling 'nice mars /tmp/20200915-0310/f6/tmp-_marsAirKQA.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.031242 - Welcome to MARS
+mars - INFO   - 20200915.031242 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.031242 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.031242 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.031242 - MIR version: 1.4.7
+mars - INFO   - 20200915.031242 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.031242 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.031242 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.031242 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-25,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,number=1/to/6,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-25,type=pf,class=s2mars - INFO   - 20200915.031242 - Automatic split by date is on
+
+mars - INFO   - 20200915.031242 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-25,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    NUMBER     = 1/2/3/4/5/6,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20191125
+
+mars - INFO   - 20200915.031242 - Web API request id: 5f603129cb03d5e70e91dd0e
+mars - INFO   - 20200915.031242 - Requesting 3294 fields
+mars - INFO   - 20200915.031242 - Calling mars on 'marsth', local port is 38967
+mars - INFO   - 20200915.031242 - Server task is 470 [marsth]
+mars - INFO   - 20200915.031242 - Request cost: 3,294 fields, 281.152 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20200915.031243 - Transfering 294809706 bytes
+mars - INFO   - 20200915.031305 - 3294 fields retrieved from 'marsth'
+mars - INFO   - 20200915.031305 - 3294 fields have been interpolated
+mars - INFO   - 20200915.031305 - Request time:  wall: 23 sec  cpu: 22 sec
+mars - INFO   - 20200915.031305 -   Read from network: 281.15 Mbyte(s) in < 1 sec [753.29 Mbyte/sec]
+mars - INFO   - 20200915.031305 -   Visiting marsth: wall: 22 sec
+mars - INFO   - 20200915.031305 -   Post-processing: wall: 15 sec cpu: 15 sec
+mars - INFO   - 20200915.031305 -   Writing to target file: 142.05 Mbyte(s) in < 1 sec [332.74 Mbyte/sec]
+mars - INFO   - 20200915.031305 - Memory used: 44.00 Mbyte(s)
+mars - INFO   - 20200915.031305 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0310/f6/tmp-_marsAirKQA.req']' finished
+2020-09-15 00:13:08 Request is complete
+2020-09-15 00:13:08 Transfering 142.051 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_pf_reforecast_2016_11_25.grib
+2020-09-15 00:13:08 From https://stream.ecmwf.int/data/webmars-private-svc-green-003/data/scratch/20200915-0310/b4/_mars-webmars-private-svc-green-003-6fe5cac1a363ec1525f54343b6cc9fd8-LOA2p0.grib
+2020-09-15 00:14:35 Transfer rate 1.63201 Mbytes/s
+2020-09-15 00:14:37 ECMWF API python library 1.5.4
+2020-09-15 00:14:37 ECMWF API at https://api.ecmwf.int/v1
+2020-09-15 00:14:38 Welcome Marisol Osman
+2020-09-15 00:14:39 In case of problems, please check https://confluence.ecmwf.int/display/WEBAPI/Web+API+FAQ or contact servicedesk@ecmwf.int
+2020-09-15 00:14:40 Request submitted
+2020-09-15 00:14:40 Request id: 5f6031a06799ce99cef633ad
+2020-09-15 00:14:40 Request is submitted
+2020-09-15 00:14:42 Request is active
+Calling 'nice mars /tmp/20200915-0310/99/tmp-_mars5K91bl.req'
+mars - WARN -
+mars - WARN - From 29 January 2019 10AM (UTC) MARS uses the interpolation
+mars - WARN - provided by the MIR library. For more details, see
+mars - WARN - https://confluence.ecmwf.int/display/UDOC/MARS+interpolation+with+MIR
+mars - WARN -
+MIR environment variables:
+MIR_CACHE_PATH=/data/ec_coeff
+mars - INFO   - 20200915.031440 - Welcome to MARS
+mars - INFO   - 20200915.031440 - MARS Client bundle version: 6.28.6.1
+mars - INFO   - 20200915.031440 - MARS Client package version: 6.28.6
+mars - INFO   - 20200915.031440 - MARS Client build stamp: 20200717102127
+mars - INFO   - 20200915.031440 - MIR version: 1.4.7
+mars - INFO   - 20200915.031440 - Using ecCodes version 2.18.0
+mars - INFO   - 20200915.031440 - Using odb_api version: 0.15.11 (file format version: 0.5)
+mars - INFO   - 20200915.031440 - Using FDB5 version: 5.6.1
+mars - INFO   - 20200915.031440 - Maximum retrieval size is 50.00 G
+retrieve,origin=egrr,hdate=2016-11-25,stream=enfh,area=0/0/-90/358.5,levtype=pl,level=10/50/100/200/300/500/700/850/1000,expver=prod,padding=0,step=0/to/1440/by/24,param=u,time=00,date=2019-11-25,type=cf,class=s2mars - INFO   - 20200915.031441 - Automatic split by date is on
+
+mars - INFO   - 20200915.031441 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = CF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = PL,
+    LEVELIST   = 10/50/100/200/300/500/700/850/1000,
+    PARAM      = 131,
+    HDATE      = 2016-11-25,
+    TIME       = 0000,
+    STEP       = 0/24/48/72/96/120/144/168/192/216/240/264/288/312/336/360/384/408/432/456/480/504/528/552/576/600/624/648/672/696/720/744/768/792/816/840/864/888/912/936/960/984/1008/1032/1056/1080/1104/1128/1152/1176/1200/1224/1248/1272/1296/1320/1344/1368/1392/1416/1440,
+    ORIGIN     = EGRR,
+    AREA       = 0/0/-90/358.5,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    NUMBER     = 0,
+    DATE       = 20191125
+
+mars - INFO   - 20200915.031441 - Web API request id: 5f6031a06799ce99cef633ad
+mars - INFO   - 20200915.031441 - Requesting 549 fields
+mars - INFO   - 20200915.031441 - Calling mars on 'marsth', local port is 52010
+mars - INFO   - 20200915.031441 - Server task is 39 [marsth]
+mars - INFO   - 20200915.031441 - Request cost: 549 fields, 46.8587 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20200915.031441 - Transfering 49134951 bytes
+mars - INFO   - 20200915.031446 - 549 fields retrieved from 'marsth'
+mars - INFO   - 20200915.031446 - 549 fields have been interpolated
+mars - INFO   - 20200915.031446 - Request time:  wall: 5 sec  cpu: 3 sec
+mars - INFO   - 20200915.031446 -   Read from network: 46.86 Mbyte(s) in < 1 sec [59.85 Mbyte/sec]
+mars - INFO   - 20200915.031446 -   Visiting marsth: wall: 5 sec
+mars - INFO   - 20200915.031446 -   Post-processing: wall: 3 sec cpu: 3 sec
+mars - INFO   - 20200915.031446 -   Writing to target file: 23.68 Mbyte(s) in < 1 sec [225.05 Mbyte/sec]
+mars - INFO   - 20200915.031446 - Memory used: 43.95 Mbyte(s)
+mars - INFO   - 20200915.031446 - No errors reported
+Process '['nice', 'mars', '/tmp/20200915-0310/99/tmp-_mars5K91bl.req']' finished
+2020-09-15 00:14:48 Request is complete
+2020-09-15 00:14:48 Transfering 23.6752 Mbytes into /datos/S2S/UKMO/UKMO_u_SH_cf_reforecast_2016_11_25.grib
+2020-09-15 00:14:48 From https://stream.ecmwf.int/data/webmars-private-svc-green-004/data/scratch/20200915-0310/56/_mars-webmars-private-svc-green-004-6fe5cac1a363ec1525f54343b6cc9fd8-HA4X6z.grib
+2020-09-15 00:15:03 Transfer rate 1.55269 Mbytes/s

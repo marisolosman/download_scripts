@@ -1,0 +1,6 @@
+#!bin/bash
+python script_ecmwf_reforecast_by_month_2t_SAm_v2015_06to08.py
+python script_ecmwf_reforecast_by_month_2t_SAm_v2016_06to08.py
+python script_ecmwf_reforecast_by_month_2t_SAm_v2018_06to08.py
+
+

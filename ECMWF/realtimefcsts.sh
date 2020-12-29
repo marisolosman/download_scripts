@@ -1,0 +1,7 @@
+#!bin/bash
+python script_ecmwf_realtimefcst_by_month_2t_SAm_2015_06to08.py
+python script_ecmwf_realtimefcst_by_month_2t_SAm_2016_06to08.py
+python script_ecmwf_realtimefcst_by_month_2t_SAm_2017_06to08.py
+python script_ecmwf_realtimefcst_by_month_2t_SAm_2018_06to08.py
+
+

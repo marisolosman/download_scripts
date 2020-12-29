@@ -1,0 +1,75 @@
+2018-08-31 11:55:05 ECMWF API python library 1.5.0
+2018-08-31 11:55:05 ECMWF API at https://api.ecmwf.int/v1
+2018-08-31 11:55:07 Welcome Mariano Alvarez
+2018-08-31 11:55:08 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2018-08-31 11:55:08 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2018-08-31 11:55:10 Request submitted
+2018-08-31 11:55:10 Request id: 5b8957b330dc191085dd7d53
+2018-08-31 11:55:10 Request is queued
+Calling 'nice mars /tmp/31/92/tmp-_marsoCEKHf.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20180831.153015 - Welcome to MARS
+mars - INFO   - 20180831.153015 - MARS Client build stamp: 20180803152026
+mars - INFO   - 20180831.153015 - MARS Client version: 6.22.3
+mars - INFO   - 20180831.153015 - EMOSLIB version: 4.5.5
+mars - INFO   - 20180831.153015 - Using ecCodes version 2.8.2
+mars - INFO   - 20180831.153015 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20180831.153015 - Maximum retrieval size is 30.00 G
+retrieve,origin=ecmf,hdate=19970601/19970608/19970615/19970622/19970629,stream=enfh,area=20/-90/-60/-30,levtype=sfc,level=0,number=1/to/10,expver=prod,padding=0,step=0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,param=2t,time=00,date=20170601/20170608/20170615/20170622/20170629,type=pf,class=s2mars - INFO   - 20180831.153015 - Automatic split by date is on
+
+mars - INFO   - 20180831.153015 - Processing request 1
+
+RETRIEVE,
+    CLASS      = S2,
+    TYPE       = PF,
+    STREAM     = ENFH,
+    EXPVER     = prod,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 167,
+    HDATE      = 19970601/19970608/19970615/19970622/19970629,
+    TIME       = 0000,
+    STEP       = 0-24/24-48/48-72/72-96/96-120/120-144/144-168/168-192/192-216/216-240/240-264/264-288/288-312/312-336/336-360/360-384/384-408/408-432/432-456/456-480/480-504/504-528/528-552/552-576/576-600/600-624/624-648/648-672/672-696/696-720/720-744/744-768/768-792/792-816/816-840/840-864/864-888/888-912/912-936/936-960/960-984/984-1008/1008-1032/1032-1056/1056-1080/1080-1104,
+    NUMBER     = 1/2/3/4/5/6/7/8/9/10,
+    ORIGIN     = ECMF,
+    AREA       = 20/-90/-60/-30,
+    PADDING    = 0,
+    PROCESS    = LOCAL,
+    DATE       = 20170601/20170608/20170615/20170622/20170629
+
+mars - INFO   - 20180831.153015 - Web API request id: 5b8957b330dc191085dd7d53
+mars - INFO   - 20180831.153015 - Requesting 11500 fields
+mars - INFO   - 20180831.153015 - Calling mars on 'marsth', callback on 46201
+mars - INFO   - 20180831.153015 - Server task is 45 [marsth]
+mars - INFO   - 20180831.153016 - Request cost: 2,300 fields, 127.863 Mbytes online, nodes: mvr01 [marsth]
+mars - INFO   - 20180831.153016 - Transfering 134073900 bytes
+mars - WARN   - 20180831.153029 - Visiting database marsth : expected 11500, got 2300
+mars - INFO   - 20180831.153029 - 2300 fields have been interpolated
+mars - ERROR  - 20180831.153029 - Expected 11500, got 2300.
+mars - ERROR  - 20180831.153029 - Request failed
+mars - INFO   - 20180831.153029 - Request time:  wall: 14 sec  cpu: 12 sec
+mars - INFO   - 20180831.153029 -   Read from network: 127.86 Mbyte(s) in < 1 sec [498.91 Mbyte/sec]
+mars - INFO   - 20180831.153029 -   Visiting marsth: wall: 14 sec
+mars - INFO   - 20180831.153029 -   Post-processing: wall: 7 sec cpu: 7 sec
+mars - INFO   - 20180831.153029 -   Writing to target file: 10.36 Mbyte(s) in < 1 sec [180.99 Mbyte/sec]
+mars - INFO   - 20180831.153029 - Memory used: 44.30 Mbyte(s)
+mars - ERROR  - 20180831.153029 - Some errors reported
+Traceback (most recent call last):
+  File "script_ecmwf_reforecast_by_month_2t_SAm_v2017_06to08.py", line 80, in <module>
+    "type": "pf",
+  File "/home/mariano/anaconda3/lib/python3.6/site-packages/ecmwfapi/api.py", line 520, in retrieve
+    c.execute(req, target)
+  File "/home/mariano/anaconda3/lib/python3.6/site-packages/ecmwfapi/api.py", line 463, in execute
+    self.connection.wait()
+  File "/home/mariano/anaconda3/lib/python3.6/site-packages/ecmwfapi/api.py", line 360, in wait
+    self.call(self.location, None, "GET")
+  File "/home/mariano/anaconda3/lib/python3.6/site-packages/ecmwfapi/api.py", line 140, in wrapped
+    return func(self, *args, **kwargs)
+  File "/home/mariano/anaconda3/lib/python3.6/site-packages/ecmwfapi/api.py", line 340, in call
+    raise APIException("ecmwf.API error 1: %s" % (self.last["error"],))
+ecmwfapi.api.APIException: 'ecmwf.API error 1: ERROR 6 (MARS_EXPECTED_FIELDS): Expected 11500, got 2300'
