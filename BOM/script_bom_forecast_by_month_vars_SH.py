@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 
 ##
-#       Python code to retrieve the complete BoM reforecasts for a single variable (in this case total precipitation)
-#       and over a specified region (in this case South America) and at a single level. The script will retrieve one grib file 
+#       Python code to retrieve the complete BoM reforecasts for different variables (in this case gh, t, u)
+#       and over a specified region (in this case Southern Hemisphere) and at a single level. The script will retrieve one grib file 
 #       per month per year and those are later converted to NetCDF.
 #
-#       M. Alvarez 2017 based on Paula Gonzalez - IRI - Jul 2015
+#       M. Osman 2020 based on Paula Gonzalez - IRI - Jul 2015
 ##
 
 # parameters that can be changed by the user
 
 f_year=2019
-month_name_list=["08","09","10","11","12"]
+month_name_list=["08","09","10","11","12"] #add/remove months
 day_name_list=["01","06","11","16","21","26"]
 region="SHPolar"
 region_limits="0/0/-90/358.5"  # area:  N/W/S/E

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 ##
-#       Python code to retrieve the complete ISAC reforecasts for a single variable over a region and at multiple levels. The script will retrieve one grib file per hdate
+#       Python code to retrieve the complete ECCC reforecasts for a single variable over a region and at multiple levels. The script will retrieve one grib file per hdate
 #
 #       M. Osman 2020 based on Paula Gonzalez - IRI - Jul 2015
 ##
@@ -22,9 +22,8 @@ modeldate = "2019-08-01"
 # Agrego Path
 pathto="/datos/S2S/ECCC/"
 
-# ECCC version 2019
+# ECCC version 2019 ---> change model version below
 
-# no further changes required
 import os
 from datetime import *
 from ecmwfapi import ECMWFDataServer
@@ -32,7 +31,7 @@ from ecmwfapi import ECMWFDataServer
 year_list=range(initial_year,final_year+1)
 
 for dy in year_list:
-    moddate = datetime.strptime(modeldate, "%Y-%m-%d")
+    moddate = datetime.strptime(modeldate, "%Y-%m-%d") # --> change model version
     while (moddate<datetime.strptime("2020-01-01", "%Y-%m-%d")):
         hdates = str(dy) + "-" + moddate.strftime("%m-%d")
         file_name = pathto + "ECCC_" + variable + "_" + region + "_pf_reforecast_" + str(dy) + "_" +\

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 ##
-#       Python code to retrieve the complete ISAC reforecasts for a single variable (in this case surface air temperature)
-#       and over a specified region (in this case South America) and at a single level. The script will retrieve one grib file 
+#       Python code to retrieve the complete ISAC reforecasts for a single variable (in this case zonal wind)
+#       and over a specified region (in this case Southern Hemisphere) and multiple levels. The script will retrieve one grib file 
 #       per month per year and those are later converted to NetCDF.
 #
-#       M. Alvarez 2017 based on Paula Gonzalez - IRI - Jul 2015
+#       M. Osman 2020 based on Paula Gonzalez - IRI - Jul 2015
 ##
 
 # parameters that can be changed by the user

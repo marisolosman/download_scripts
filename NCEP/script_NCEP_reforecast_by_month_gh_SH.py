@@ -2,10 +2,10 @@
 
 ##
 #       Python code to retrieve the complete NCEP reforecasts for a single variable (in this case geopotential height)
-#       and over a specified region (in this case Southern Hemisphere to 20N) and at a single level. The script will retrieve one grib file 
+#       and over a specified region (in this case Southern Hemisphere to 20N) and at multiple levels. The script will retrieve one grib file 
 #       per month per year and those are later converted to NetCDF.
 #
-#       M. Alvarez 2017 based on Paula Gonzalez - IRI - Jul 2015
+#       M. Osman 2020 based on Paula Gonzalez - IRI - Jul 2015
 ##
 
 # parameters that can be changed by the user

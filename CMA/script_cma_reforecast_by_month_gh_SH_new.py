@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 ##
-#       Python code to retrieve the complete CMA reforecasts for a single variable (in this case u)
+#       Python code to retrieve the complete CMA reforecasts for a single variable (in this case gh)
 #       and over a specified region (in this case Southern Hemisphere) and at multiple levels. The script will retrieve one grib file 
 #       M. Osman 2020 based on Paula Gonzalez - IRI - Jul 2015
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 ##
-#       Python code to retrieve the complete NCEP reforecasts for a single variable (in this case geopotential height)
-#       and over a specified region (in this case Southern Hemisphere to 20N) and at a single level. The script will retrieve one grib file 
+#       Python code to retrieve the complete NCEP reforecasts for a single variable (in this case u)
+#       and over a specified region (in this case Southern Hemisphere) and multiple levels. The script will retrieve one grib file 
 #       per month per year and those are later converted to NetCDF.
 #
 #       M. Alvarez 2017 based on Paula Gonzalez - IRI - Jul 2015
@@ -18,7 +18,6 @@ variable="u"
 level_type="pl"
 level ="50/100/200/300/500/700/850/925/1000"
 origen="rums"
-#moddate="2011-03-01"
 paso="0/to/1464/by/24"
 num="1/2/3/4/5/6/7/8/9"
 
@@ -35,7 +34,7 @@ from ecmwfapi import ECMWFDataServer
 year_list=range(initial_year,final_year+1)
 
 for dy in year_list:
-        moddate = datetime.strptime("2019-08-01", "%Y-%m-%d")
+        moddate = datetime.strptime("2019-08-01", "%Y-%m-%d") # --> model version
         while (moddate <= datetime.strptime("2019-12-31", "%Y-%m-%d")):
             hdate = datetime.strptime(str(dy) + "-" + moddate.strftime("%m-%d"), "%Y-%m-%d")
             file_name= pathto + "HMCR_" + variable + "_" + region + "_pf_reforecast_" + str(dy) +\
